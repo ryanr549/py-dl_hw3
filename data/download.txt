@@ -1,0 +1,7 @@
+https://zenodo.org/record/4507941/files/SimReal_SOURCE_X_Illustris0.npy
+https://zenodo.org/record/4507941/files/SimReal_TARGET_X_postmergers_SDSS.npy
+https://zenodo.org/record/4507941/files/SimReal_TARGET_y_postmergers_SDSS.npy
+https://zenodo.org/record/4507941/files/SimSim_SOURCE_X_Illustris2_pristine.npy
+https://zenodo.org/record/4507941/files/SimSim_SOURCE_y_Illustris2_pristine.npy
+https://zenodo.org/record/4507941/files/SimSim_TARGET_X_Illustris2_noisy.npy
+https://zenodo.org/record/4507941/files/SimSim_TARGET_y_Illustris2_noisy.npy

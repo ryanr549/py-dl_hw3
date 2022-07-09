@@ -1,0 +1,606 @@
+dataset sizes: source=4200, target=4200
+config: {'epochs': 200, 'output_for_test': True, 'output_path': 'output_DeepMerge_SDSS/MMD+F', 'optim_choice': 'Adam', 'grad_vis': 'no', 'lr_scan': 'no', 'cycle_length': 2, 'early_stop_patience': 20, 'weight_decay': 0.0001, 'blobs': None, 'fisher_or_no': 'yes', 'seed': 1, 'out_file': <_io.TextIOWrapper name='output_DeepMerge_SDSS/MMD+F/log.txt' mode='w' encoding='UTF-8'>, 'loss': {'name': <function mmd_distance at 0x7fcfce20e550>, 'ly_type': 'cosine', 'fisher_loss_type': 'tr', 'discriminant_loss': <class 'loss.FisherTR'>, 'trade_off': 1.0, 'update_iter': 200, 'intra_loss_coef': 0.01, 'inter_loss_coef': 1.0, 'inter_type': 'global', 'em_loss_coef': 0.05}, 'network': {'name': <class 'network.DeepMerge'>, 'params': {'class_num': 2, 'new_cls': True, 'use_bottleneck': False, 'bottleneck_dim': 2592}}, 'optimizer': {'type': 'Adam', 'optim_params': {'lr': 0.0001, 'betas': (0.7, 0.8), 'weight_decay': 0.0001, 'amsgrad': True, 'eps': 1e-08}, 'lr_type': 'one-cycle', 'lr_param': {'init_lr': 0.0001, 'gamma': 0.001, 'power': 0.75}}, 'frozen lr': 0.0001, 'dataset': 'galaxy', 'path': 'data/', 'num_iterations': 6601, 'test_interval': 33, 'snapshot_interval': 1650.0, 'log_iter': 33}
+epoch: 0.0, cosine validation accuracy: 0.51333, cosine training accuracy: 0.50262
+epoch 0.0: train total loss=4.6288, train transfer loss=1.2263, train classifier loss=0.6900, train entropy min loss=0.6842, train fisher loss=2.6782, train intra-group fisher loss=725156.2500, train inter-group fisher loss=2707.5889
+epoch 0.0, valid transfer loss=1.1925, valid classifier loss=0.6941, valid entropy min loss=0.6900, valid fisher loss=0.6316, valid intra-group fisher loss=171055.1875, valid inter-group fisher loss=2708.1367
+epoch: 1.0, cosine validation accuracy: 0.56000, cosine training accuracy: 0.56857
+epoch 1.0: train total loss=3.9310, train transfer loss=0.8907, train classifier loss=0.6815, train entropy min loss=0.6911, train fisher loss=2.3243, train intra-group fisher loss=650719.3125, train inter-group fisher loss=2799.5830
+epoch 1.0, valid transfer loss=1.8451, valid classifier loss=0.6926, valid entropy min loss=0.6917, valid fisher loss=0.8259, valid intra-group fisher loss=231504.4688, valid inter-group fisher loss=2803.1511
+epoch: 2.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.58310
+epoch 2.0: train total loss=3.6583, train transfer loss=0.8403, train classifier loss=0.6811, train entropy min loss=0.6875, train fisher loss=2.1025, train intra-group fisher loss=599920.9375, train inter-group fisher loss=2853.3752
+epoch 2.0, valid transfer loss=0.9641, valid classifier loss=0.6870, valid entropy min loss=0.6877, valid fisher loss=1.0187, valid intra-group fisher loss=290774.5000, valid inter-group fisher loss=2854.3955
+epoch: 3.0, cosine validation accuracy: 0.56667, cosine training accuracy: 0.57857
+epoch 3.0: train total loss=3.4267, train transfer loss=0.7692, train classifier loss=0.6739, train entropy min loss=0.6808, train fisher loss=1.9496, train intra-group fisher loss=569056.0625, train inter-group fisher loss=2918.8479
+epoch 3.0, valid transfer loss=0.9844, valid classifier loss=0.6779, valid entropy min loss=0.6838, valid fisher loss=0.8385, valid intra-group fisher loss=244884.5000, valid inter-group fisher loss=2920.5142
+epoch: 4.0, cosine validation accuracy: 0.55333, cosine training accuracy: 0.57952
+epoch 4.0: train total loss=3.1830, train transfer loss=0.7777, train classifier loss=0.6789, train entropy min loss=0.6778, train fisher loss=1.6926, train intra-group fisher loss=498623.9375, train inter-group fisher loss=2945.9634
+epoch 4.0, valid transfer loss=0.8772, valid classifier loss=0.6676, valid entropy min loss=0.6776, valid fisher loss=0.8515, valid intra-group fisher loss=250949.1875, valid inter-group fisher loss=2947.0598
+epoch: 5.0, cosine validation accuracy: 0.54833, cosine training accuracy: 0.57833
+epoch 5.0: train total loss=2.9935, train transfer loss=0.6985, train classifier loss=0.6668, train entropy min loss=0.6768, train fisher loss=1.5944, train intra-group fisher loss=477563.4688, train inter-group fisher loss=2995.2390
+epoch 5.0, valid transfer loss=0.9003, valid classifier loss=0.6957, valid entropy min loss=0.6846, valid fisher loss=0.6954, valid intra-group fisher loss=208350.8750, valid inter-group fisher loss=2996.0020
+epoch: 6.0, cosine validation accuracy: 0.55667, cosine training accuracy: 0.58857
+epoch 6.0: train total loss=2.9006, train transfer loss=0.6368, train classifier loss=0.6703, train entropy min loss=0.6739, train fisher loss=1.5598, train intra-group fisher loss=470390.9375, train inter-group fisher loss=3015.7627
+epoch 6.0, valid transfer loss=0.9758, valid classifier loss=0.6712, valid entropy min loss=0.6738, valid fisher loss=0.7606, valid intra-group fisher loss=229466.7656, valid inter-group fisher loss=3017.0000
+epoch: 7.0, cosine validation accuracy: 0.56833, cosine training accuracy: 0.58643
+epoch 7.0: train total loss=2.7176, train transfer loss=0.5823, train classifier loss=0.6650, train entropy min loss=0.6668, train fisher loss=1.4369, train intra-group fisher loss=438290.7812, train inter-group fisher loss=3050.2512
+epoch 7.0, valid transfer loss=0.7701, valid classifier loss=0.6823, valid entropy min loss=0.6625, valid fisher loss=0.6958, valid intra-group fisher loss=212246.0781, valid inter-group fisher loss=3050.5903
+epoch: 8.0, cosine validation accuracy: 0.56000, cosine training accuracy: 0.58476
+epoch 8.0: train total loss=2.5556, train transfer loss=0.4260, train classifier loss=0.6792, train entropy min loss=0.6655, train fisher loss=1.4172, train intra-group fisher loss=435045.1250, train inter-group fisher loss=3069.8418
+epoch 8.0, valid transfer loss=0.7577, valid classifier loss=0.6711, valid entropy min loss=0.6729, valid fisher loss=0.6746, valid intra-group fisher loss=207173.4375, valid inter-group fisher loss=3071.0071
+epoch: 9.0, cosine validation accuracy: 0.56500, cosine training accuracy: 0.58952
+epoch 9.0: train total loss=2.5567, train transfer loss=0.4927, train classifier loss=0.6722, train entropy min loss=0.6679, train fisher loss=1.3583, train intra-group fisher loss=419762.9375, train inter-group fisher loss=3090.2766
+epoch 9.0, valid transfer loss=0.7515, valid classifier loss=0.6825, valid entropy min loss=0.6793, valid fisher loss=0.6826, valid intra-group fisher loss=210941.7031, valid inter-group fisher loss=3090.4463
+epoch: 10.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.58881
+epoch 10.0: train total loss=2.5571, train transfer loss=0.5012, train classifier loss=0.6849, train entropy min loss=0.6716, train fisher loss=1.3373, train intra-group fisher loss=416061.9375, train inter-group fisher loss=3111.1738
+epoch 10.0, valid transfer loss=0.7322, valid classifier loss=0.6817, valid entropy min loss=0.6783, valid fisher loss=0.6499, valid intra-group fisher loss=202245.8438, valid inter-group fisher loss=3111.9810
+epoch: 11.0, cosine validation accuracy: 0.55167, cosine training accuracy: 0.58881
+epoch 11.0: train total loss=2.5614, train transfer loss=0.5920, train classifier loss=0.6593, train entropy min loss=0.6734, train fisher loss=1.2764, train intra-group fisher loss=398710.0000, train inter-group fisher loss=3123.6887
+epoch 11.0, valid transfer loss=0.7468, valid classifier loss=0.7061, valid entropy min loss=0.6708, valid fisher loss=0.6414, valid intra-group fisher loss=200378.9531, valid inter-group fisher loss=3124.0264
+epoch: 12.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.59095
+epoch 12.0: train total loss=2.6074, train transfer loss=0.7614, train classifier loss=0.6752, train entropy min loss=0.6833, train fisher loss=1.1366, train intra-group fisher loss=357493.0625, train inter-group fisher loss=3145.2139
+epoch 12.0, valid transfer loss=0.6337, valid classifier loss=0.6916, valid entropy min loss=0.6628, valid fisher loss=0.6499, valid intra-group fisher loss=204437.9688, valid inter-group fisher loss=3145.6570
+epoch: 13.0, cosine validation accuracy: 0.56167, cosine training accuracy: 0.59214
+epoch 13.0: train total loss=2.4716, train transfer loss=0.5175, train classifier loss=0.6823, train entropy min loss=0.6760, train fisher loss=1.2380, train intra-group fisher loss=390541.1875, train inter-group fisher loss=3154.6914
+epoch 13.0, valid transfer loss=0.7658, valid classifier loss=0.6441, valid entropy min loss=0.6732, valid fisher loss=0.6098, valid intra-group fisher loss=192402.5000, valid inter-group fisher loss=3155.1655
+epoch: 14.0, cosine validation accuracy: 0.55333, cosine training accuracy: 0.57571
+epoch 14.0: train total loss=2.4274, train transfer loss=0.4540, train classifier loss=0.6664, train entropy min loss=0.6718, train fisher loss=1.2734, train intra-group fisher loss=404180.4375, train inter-group fisher loss=3173.9175
+epoch 14.0, valid transfer loss=0.7849, valid classifier loss=0.6911, valid entropy min loss=0.6676, valid fisher loss=0.6250, valid intra-group fisher loss=198389.7812, valid inter-group fisher loss=3174.2014
+epoch: 15.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.59381
+epoch 15.0: train total loss=2.4147, train transfer loss=0.4680, train classifier loss=0.6785, train entropy min loss=0.6724, train fisher loss=1.2346, train intra-group fisher loss=393069.2500, train inter-group fisher loss=3183.7153
+epoch 15.0, valid transfer loss=0.6460, valid classifier loss=0.6584, valid entropy min loss=0.6735, valid fisher loss=0.6308, valid intra-group fisher loss=200875.7656, valid inter-group fisher loss=3184.3308
+epoch: 16.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.59738
+epoch 16.0: train total loss=2.3403, train transfer loss=0.4453, train classifier loss=0.6653, train entropy min loss=0.6747, train fisher loss=1.1960, train intra-group fisher loss=382705.3125, train inter-group fisher loss=3199.8633
+epoch 16.0, valid transfer loss=0.7038, valid classifier loss=0.6853, valid entropy min loss=0.6779, valid fisher loss=0.5996, valid intra-group fisher loss=191859.2188, valid inter-group fisher loss=3199.9915
+epoch: 17.0, cosine validation accuracy: 0.51833, cosine training accuracy: 0.58429
+epoch 17.0: train total loss=2.3270, train transfer loss=0.4172, train classifier loss=0.6793, train entropy min loss=0.6701, train fisher loss=1.1970, train intra-group fisher loss=384349.6250, train inter-group fisher loss=3210.9644
+epoch 17.0, valid transfer loss=0.6788, valid classifier loss=0.7013, valid entropy min loss=0.6569, valid fisher loss=0.6095, valid intra-group fisher loss=195749.0938, valid inter-group fisher loss=3211.5803
+epoch: 18.0, cosine validation accuracy: 0.55667, cosine training accuracy: 0.60024
+epoch 18.0: train total loss=2.3610, train transfer loss=0.4586, train classifier loss=0.6526, train entropy min loss=0.6709, train fisher loss=1.2161, train intra-group fisher loss=391788.9375, train inter-group fisher loss=3221.5676
+epoch 18.0, valid transfer loss=0.8793, valid classifier loss=0.6980, valid entropy min loss=0.6676, valid fisher loss=0.5850, valid intra-group fisher loss=188463.7500, valid inter-group fisher loss=3221.7195
+epoch: 19.0, cosine validation accuracy: 0.55167, cosine training accuracy: 0.60214
+epoch 19.0: train total loss=2.2834, train transfer loss=0.4003, train classifier loss=0.6587, train entropy min loss=0.6675, train fisher loss=1.1911, train intra-group fisher loss=385357.2188, train inter-group fisher loss=3235.4160
+epoch 19.0, valid transfer loss=0.6721, valid classifier loss=0.6816, valid entropy min loss=0.6637, valid fisher loss=0.5893, valid intra-group fisher loss=190693.5000, valid inter-group fisher loss=3235.8948
+epoch: 20.0, cosine validation accuracy: 0.54667, cosine training accuracy: 0.60214
+epoch 20.0: train total loss=2.2490, train transfer loss=0.3811, train classifier loss=0.6761, train entropy min loss=0.6731, train fisher loss=1.1581, train intra-group fisher loss=375565.6250, train inter-group fisher loss=3242.8716
+epoch 20.0, valid transfer loss=0.7231, valid classifier loss=0.6901, valid entropy min loss=0.6690, valid fisher loss=0.5797, valid intra-group fisher loss=188015.2812, valid inter-group fisher loss=3243.1296
+epoch: 21.0, cosine validation accuracy: 0.55833, cosine training accuracy: 0.59167
+epoch 21.0: train total loss=2.2430, train transfer loss=0.4036, train classifier loss=0.6490, train entropy min loss=0.6698, train fisher loss=1.1569, train intra-group fisher loss=376739.8125, train inter-group fisher loss=3256.4941
+epoch 21.0, valid transfer loss=0.8120, valid classifier loss=0.7061, valid entropy min loss=0.6749, valid fisher loss=0.5846, valid intra-group fisher loss=190402.3906, valid inter-group fisher loss=3256.8037
+epoch: 22.0, cosine validation accuracy: 0.55500, cosine training accuracy: 0.59238
+epoch 22.0: train total loss=2.2688, train transfer loss=0.4183, train classifier loss=0.6592, train entropy min loss=0.6695, train fisher loss=1.1578, train intra-group fisher loss=377754.3750, train inter-group fisher loss=3262.7793
+epoch 22.0, valid transfer loss=0.7527, valid classifier loss=0.6999, valid entropy min loss=0.6612, valid fisher loss=0.5733, valid intra-group fisher loss=187078.4062, valid inter-group fisher loss=3263.1133
+epoch: 23.0, cosine validation accuracy: 0.56000, cosine training accuracy: 0.60286
+epoch 23.0: train total loss=2.2264, train transfer loss=0.4319, train classifier loss=0.6517, train entropy min loss=0.6690, train fisher loss=1.1094, train intra-group fisher loss=363293.6875, train inter-group fisher loss=3274.7744
+epoch 23.0, valid transfer loss=0.5925, valid classifier loss=0.7106, valid entropy min loss=0.6677, valid fisher loss=0.5678, valid intra-group fisher loss=185938.9531, valid inter-group fisher loss=3274.9480
+epoch: 24.0, cosine validation accuracy: 0.55500, cosine training accuracy: 0.60310
+epoch 24.0: train total loss=2.2650, train transfer loss=0.4485, train classifier loss=0.6744, train entropy min loss=0.6647, train fisher loss=1.1089, train intra-group fisher loss=363912.8750, train inter-group fisher loss=3281.6384
+epoch 24.0, valid transfer loss=0.7621, valid classifier loss=0.6690, valid entropy min loss=0.6619, valid fisher loss=0.5536, valid intra-group fisher loss=181682.2500, valid inter-group fisher loss=3282.0525
+epoch: 25.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.60595
+epoch 25.0: train total loss=2.2004, train transfer loss=0.4023, train classifier loss=0.6524, train entropy min loss=0.6706, train fisher loss=1.1122, train intra-group fisher loss=366062.1250, train inter-group fisher loss=3291.3984
+epoch 25.0, valid transfer loss=0.6596, valid classifier loss=0.6968, valid entropy min loss=0.6698, valid fisher loss=0.5570, valid intra-group fisher loss=183342.8594, valid inter-group fisher loss=3291.4568
+epoch: 26.0, cosine validation accuracy: 0.55000, cosine training accuracy: 0.60952
+epoch 26.0: train total loss=2.1930, train transfer loss=0.3868, train classifier loss=0.6722, train entropy min loss=0.6733, train fisher loss=1.1004, train intra-group fisher loss=363056.1875, train inter-group fisher loss=3299.4109
+epoch 26.0, valid transfer loss=0.6719, valid classifier loss=0.6679, valid entropy min loss=0.6766, valid fisher loss=0.5426, valid intra-group fisher loss=179037.0938, valid inter-group fisher loss=3299.7957
+epoch: 27.0, cosine validation accuracy: 0.54667, cosine training accuracy: 0.59167
+epoch 27.0: train total loss=2.1620, train transfer loss=0.4001, train classifier loss=0.6302, train entropy min loss=0.6708, train fisher loss=1.0981, train intra-group fisher loss=363032.3125, train inter-group fisher loss=3305.9097
+epoch 27.0, valid transfer loss=0.7786, valid classifier loss=0.6667, valid entropy min loss=0.6728, valid fisher loss=0.5454, valid intra-group fisher loss=180324.5781, valid inter-group fisher loss=3306.0002
+epoch: 28.0, cosine validation accuracy: 0.57667, cosine training accuracy: 0.59690
+epoch 28.0: train total loss=2.3114, train transfer loss=0.5419, train classifier loss=0.6618, train entropy min loss=0.6673, train fisher loss=1.0743, train intra-group fisher loss=356143.9375, train inter-group fisher loss=3315.1895
+epoch 28.0, valid transfer loss=0.6448, valid classifier loss=0.6991, valid entropy min loss=0.6687, valid fisher loss=0.5402, valid intra-group fisher loss=179088.5156, valid inter-group fisher loss=3315.4692
+epoch: 29.0, cosine validation accuracy: 0.55000, cosine training accuracy: 0.61762
+epoch 29.0: train total loss=2.2242, train transfer loss=0.4428, train classifier loss=0.6450, train entropy min loss=0.6668, train fisher loss=1.1031, train intra-group fisher loss=366197.9375, train inter-group fisher loss=3319.8286
+epoch 29.0, valid transfer loss=0.5967, valid classifier loss=0.6545, valid entropy min loss=0.6567, valid fisher loss=0.5394, valid intra-group fisher loss=179067.4219, valid inter-group fisher loss=3320.0420
+epoch: 30.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.59143
+epoch 30.0: train total loss=2.1887, train transfer loss=0.4184, train classifier loss=0.6828, train entropy min loss=0.6682, train fisher loss=1.0541, train intra-group fisher loss=350905.8750, train inter-group fisher loss=3328.9038
+epoch 30.0, valid transfer loss=0.7134, valid classifier loss=0.6800, valid entropy min loss=0.6649, valid fisher loss=0.5271, valid intra-group fisher loss=175460.0625, valid inter-group fisher loss=3329.0806
+epoch: 31.0, cosine validation accuracy: 0.57667, cosine training accuracy: 0.61095
+epoch 31.0: train total loss=2.1346, train transfer loss=0.3765, train classifier loss=0.6701, train entropy min loss=0.6700, train fisher loss=1.0545, train intra-group fisher loss=351456.5625, train inter-group fisher loss=3333.0637
+epoch 31.0, valid transfer loss=0.6140, valid classifier loss=0.6834, valid entropy min loss=0.6734, valid fisher loss=0.5304, valid intra-group fisher loss=176796.5000, valid inter-group fisher loss=3333.3003
+epoch: 32.0, cosine validation accuracy: 0.57667, cosine training accuracy: 0.60548
+epoch 32.0: train total loss=2.1021, train transfer loss=0.3760, train classifier loss=0.6682, train entropy min loss=0.6682, train fisher loss=1.0245, train intra-group fisher loss=342252.5625, train inter-group fisher loss=3340.6475
+epoch 32.0, valid transfer loss=0.7074, valid classifier loss=0.6714, valid entropy min loss=0.6694, valid fisher loss=0.5192, valid intra-group fisher loss=173452.6562, valid inter-group fisher loss=3340.7292
+epoch: 33.0, cosine validation accuracy: 0.54667, cosine training accuracy: 0.59714
+epoch 33.0: train total loss=2.1133, train transfer loss=0.3838, train classifier loss=0.6436, train entropy min loss=0.6629, train fisher loss=1.0527, train intra-group fisher loss=352168.0000, train inter-group fisher loss=3345.2695
+epoch 33.0, valid transfer loss=0.6546, valid classifier loss=0.6881, valid entropy min loss=0.6743, valid fisher loss=0.5180, valid intra-group fisher loss=173313.6562, valid inter-group fisher loss=3345.5442
+epoch: 34.0, cosine validation accuracy: 0.56667, cosine training accuracy: 0.61452
+epoch 34.0: train total loss=2.2294, train transfer loss=0.4801, train classifier loss=0.6845, train entropy min loss=0.6597, train fisher loss=1.0318, train intra-group fisher loss=345753.3750, train inter-group fisher loss=3351.0288
+epoch 34.0, valid transfer loss=0.6414, valid classifier loss=0.6543, valid entropy min loss=0.6650, valid fisher loss=0.5189, valid intra-group fisher loss=173878.1562, valid inter-group fisher loss=3351.0688
+epoch: 35.0, cosine validation accuracy: 0.55000, cosine training accuracy: 0.62024
+epoch 35.0: train total loss=2.1170, train transfer loss=0.4075, train classifier loss=0.6358, train entropy min loss=0.6661, train fisher loss=1.0405, train intra-group fisher loss=349281.7500, train inter-group fisher loss=3356.9331
+epoch 35.0, valid transfer loss=0.6676, valid classifier loss=0.6799, valid entropy min loss=0.6711, valid fisher loss=0.5142, valid intra-group fisher loss=172631.4375, valid inter-group fisher loss=3357.1658
+epoch: 36.0, cosine validation accuracy: 0.56833, cosine training accuracy: 0.59952
+epoch 36.0: train total loss=2.0938, train transfer loss=0.3503, train classifier loss=0.6590, train entropy min loss=0.6587, train fisher loss=1.0515, train intra-group fisher loss=353369.7500, train inter-group fisher loss=3360.5837
+epoch 36.0, valid transfer loss=0.6540, valid classifier loss=0.6874, valid entropy min loss=0.6608, valid fisher loss=0.5262, valid intra-group fisher loss=176840.1406, valid inter-group fisher loss=3360.6770
+epoch: 37.0, cosine validation accuracy: 0.56000, cosine training accuracy: 0.60286
+epoch 37.0: train total loss=2.2039, train transfer loss=0.4913, train classifier loss=0.6621, train entropy min loss=0.6623, train fisher loss=1.0173, train intra-group fisher loss=342487.5000, train inter-group fisher loss=3366.6274
+epoch 37.0, valid transfer loss=0.6626, valid classifier loss=0.6955, valid entropy min loss=0.6659, valid fisher loss=0.5092, valid intra-group fisher loss=171443.7656, valid inter-group fisher loss=3366.7600
+epoch: 38.0, cosine validation accuracy: 0.55500, cosine training accuracy: 0.61381
+epoch 38.0: train total loss=2.1222, train transfer loss=0.4070, train classifier loss=0.6653, train entropy min loss=0.6646, train fisher loss=1.0167, train intra-group fisher loss=342556.0938, train inter-group fisher loss=3369.3738
+epoch 38.0, valid transfer loss=0.6147, valid classifier loss=0.6787, valid entropy min loss=0.6693, valid fisher loss=0.4988, valid intra-group fisher loss=168080.5781, valid inter-group fisher loss=3369.5227
+epoch: 39.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.62571
+epoch 39.0: train total loss=2.0302, train transfer loss=0.3714, train classifier loss=0.6324, train entropy min loss=0.6593, train fisher loss=0.9934, train intra-group fisher loss=335243.2188, train inter-group fisher loss=3374.6582
+epoch 39.0, valid transfer loss=0.5752, valid classifier loss=0.6922, valid entropy min loss=0.6631, valid fisher loss=0.4990, valid intra-group fisher loss=168388.6094, valid inter-group fisher loss=3374.7488
+epoch: 40.0, cosine validation accuracy: 0.57333, cosine training accuracy: 0.62643
+epoch 40.0: train total loss=2.0628, train transfer loss=0.3925, train classifier loss=0.6368, train entropy min loss=0.6607, train fisher loss=1.0005, train intra-group fisher loss=337873.4688, train inter-group fisher loss=3377.1443
+epoch 40.0, valid transfer loss=0.6798, valid classifier loss=0.7238, valid entropy min loss=0.6634, valid fisher loss=0.5061, valid intra-group fisher loss=170934.8438, valid inter-group fisher loss=3377.2998
+epoch: 41.0, cosine validation accuracy: 0.57500, cosine training accuracy: 0.62571
+epoch 41.0: train total loss=2.0378, train transfer loss=0.3825, train classifier loss=0.6572, train entropy min loss=0.6668, train fisher loss=0.9649, train intra-group fisher loss=326245.1875, train inter-group fisher loss=3381.2888
+epoch 41.0, valid transfer loss=0.6677, valid classifier loss=0.6897, valid entropy min loss=0.6749, valid fisher loss=0.4793, valid intra-group fisher loss=162064.4531, valid inter-group fisher loss=3381.3235
+epoch: 42.0, cosine validation accuracy: 0.53667, cosine training accuracy: 0.62714
+epoch 42.0: train total loss=2.0843, train transfer loss=0.4005, train classifier loss=0.6640, train entropy min loss=0.6654, train fisher loss=0.9866, train intra-group fisher loss=333911.2500, train inter-group fisher loss=3384.6318
+epoch 42.0, valid transfer loss=0.5940, valid classifier loss=0.6637, valid entropy min loss=0.6744, valid fisher loss=0.4994, valid intra-group fisher loss=169038.7500, valid inter-group fisher loss=3384.8328
+epoch: 43.0, cosine validation accuracy: 0.56667, cosine training accuracy: 0.63167
+epoch 43.0: train total loss=2.0550, train transfer loss=0.4271, train classifier loss=0.6342, train entropy min loss=0.6659, train fisher loss=0.9603, train intra-group fisher loss=325323.9688, train inter-group fisher loss=3387.6060
+epoch 43.0, valid transfer loss=0.6100, valid classifier loss=0.6577, valid entropy min loss=0.6559, valid fisher loss=0.4989, valid intra-group fisher loss=168993.5000, valid inter-group fisher loss=3387.6411
+epoch: 44.0, cosine validation accuracy: 0.56667, cosine training accuracy: 0.61786
+epoch 44.0: train total loss=1.9744, train transfer loss=0.3448, train classifier loss=0.6234, train entropy min loss=0.6607, train fisher loss=0.9731, train intra-group fisher loss=329973.9375, train inter-group fisher loss=3391.0720
+epoch 44.0, valid transfer loss=0.6567, valid classifier loss=0.6208, valid entropy min loss=0.6656, valid fisher loss=0.4915, valid intra-group fisher loss=166673.1875, valid inter-group fisher loss=3391.2166
+epoch: 45.0, cosine validation accuracy: 0.57500, cosine training accuracy: 0.61619
+epoch 45.0: train total loss=2.0509, train transfer loss=0.3861, train classifier loss=0.6688, train entropy min loss=0.6669, train fisher loss=0.9627, train intra-group fisher loss=326661.5625, train inter-group fisher loss=3393.2388
+epoch 45.0, valid transfer loss=0.7190, valid classifier loss=0.6892, valid entropy min loss=0.6659, valid fisher loss=0.4926, valid intra-group fisher loss=167139.1562, valid inter-group fisher loss=3393.3076
+epoch: 46.0, cosine validation accuracy: 0.56833, cosine training accuracy: 0.62143
+epoch 46.0: train total loss=2.1059, train transfer loss=0.4217, train classifier loss=0.6798, train entropy min loss=0.6641, train fisher loss=0.9712, train intra-group fisher loss=329928.4062, train inter-group fisher loss=3397.0337
+epoch 46.0, valid transfer loss=0.6008, valid classifier loss=0.7232, valid entropy min loss=0.6557, valid fisher loss=0.4841, valid intra-group fisher loss=164447.9062, valid inter-group fisher loss=3397.1211
+epoch: 47.0, cosine validation accuracy: 0.56500, cosine training accuracy: 0.61548
+epoch 47.0: train total loss=2.0101, train transfer loss=0.3558, train classifier loss=0.6597, train entropy min loss=0.6495, train fisher loss=0.9621, train intra-group fisher loss=326941.8750, train inter-group fisher loss=3398.3411
+epoch 47.0, valid transfer loss=0.6620, valid classifier loss=0.6764, valid entropy min loss=0.6581, valid fisher loss=0.4737, valid intra-group fisher loss=160970.6562, valid inter-group fisher loss=3398.4084
+epoch: 48.0, cosine validation accuracy: 0.51500, cosine training accuracy: 0.58714
+epoch 48.0: train total loss=2.0281, train transfer loss=0.4027, train classifier loss=0.6607, train entropy min loss=0.6638, train fisher loss=0.9316, train intra-group fisher loss=316832.8125, train inter-group fisher loss=3400.8904
+epoch 48.0, valid transfer loss=0.7720, valid classifier loss=0.6754, valid entropy min loss=0.6553, valid fisher loss=0.4717, valid intra-group fisher loss=160425.2188, valid inter-group fisher loss=3400.9084
+epoch: 49.0, cosine validation accuracy: 0.56167, cosine training accuracy: 0.61881
+epoch 49.0: train total loss=1.9996, train transfer loss=0.3817, train classifier loss=0.6257, train entropy min loss=0.6590, train fisher loss=0.9592, train intra-group fisher loss=326348.6562, train inter-group fisher loss=3402.1829
+epoch 49.0, valid transfer loss=0.5689, valid classifier loss=0.6631, valid entropy min loss=0.6608, valid fisher loss=0.4717, valid intra-group fisher loss=160484.6250, valid inter-group fisher loss=3402.2559
+epoch: 50.0, cosine validation accuracy: 0.55833, cosine training accuracy: 0.64214
+epoch 50.0: train total loss=1.9504, train transfer loss=0.3239, train classifier loss=0.6337, train entropy min loss=0.6568, train fisher loss=0.9600, train intra-group fisher loss=326835.3438, train inter-group fisher loss=3404.5576
+epoch 50.0, valid transfer loss=0.6154, valid classifier loss=0.6488, valid entropy min loss=0.6554, valid fisher loss=0.4666, valid intra-group fisher loss=158873.3438, valid inter-group fisher loss=3404.5779
+epoch: 51.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.63690
+epoch 51.0: train total loss=2.0031, train transfer loss=0.3877, train classifier loss=0.6531, train entropy min loss=0.6646, train fisher loss=0.9290, train intra-group fisher loss=316428.5938, train inter-group fisher loss=3406.0449
+epoch 51.0, valid transfer loss=0.5707, valid classifier loss=0.6530, valid entropy min loss=0.6724, valid fisher loss=0.4680, valid intra-group fisher loss=159403.2031, valid inter-group fisher loss=3406.1147
+epoch: 52.0, cosine validation accuracy: 0.55833, cosine training accuracy: 0.64190
+epoch 52.0: train total loss=2.0630, train transfer loss=0.4091, train classifier loss=0.6587, train entropy min loss=0.6579, train fisher loss=0.9623, train intra-group fisher loss=327894.5625, train inter-group fisher loss=3407.3511
+epoch 52.0, valid transfer loss=0.6221, valid classifier loss=0.6562, valid entropy min loss=0.6648, valid fisher loss=0.4637, valid intra-group fisher loss=158009.2812, valid inter-group fisher loss=3407.3787
+epoch: 53.0, cosine validation accuracy: 0.56667, cosine training accuracy: 0.63810
+epoch 53.0: train total loss=2.2381, train transfer loss=0.6494, train classifier loss=0.6900, train entropy min loss=0.6878, train fisher loss=0.8642, train intra-group fisher loss=294633.0000, train inter-group fisher loss=3409.2268
+epoch 53.0, valid transfer loss=0.7582, valid classifier loss=0.7573, valid entropy min loss=0.6551, valid fisher loss=0.4585, valid intra-group fisher loss=156325.6094, valid inter-group fisher loss=3409.2356
+epoch: 54.0, cosine validation accuracy: 0.55333, cosine training accuracy: 0.62857
+epoch 54.0: train total loss=1.9539, train transfer loss=0.3731, train classifier loss=0.6110, train entropy min loss=0.6558, train fisher loss=0.9371, train intra-group fisher loss=319538.5000, train inter-group fisher loss=3409.9941
+epoch 54.0, valid transfer loss=0.6483, valid classifier loss=0.6754, valid entropy min loss=0.6598, valid fisher loss=0.4684, valid intra-group fisher loss=159719.6094, valid inter-group fisher loss=3410.0320
+epoch: 55.0, cosine validation accuracy: 0.57000, cosine training accuracy: 0.63762
+epoch 55.0: train total loss=1.9444, train transfer loss=0.3383, train classifier loss=0.6493, train entropy min loss=0.6545, train fisher loss=0.9241, train intra-group fisher loss=315209.1562, train inter-group fisher loss=3411.1316
+epoch 55.0, valid transfer loss=0.6262, valid classifier loss=0.6590, valid entropy min loss=0.6632, valid fisher loss=0.4576, valid intra-group fisher loss=156094.9219, valid inter-group fisher loss=3411.1580
+epoch: 56.0, cosine validation accuracy: 0.59333, cosine training accuracy: 0.62905
+epoch 56.0: train total loss=1.9796, train transfer loss=0.3799, train classifier loss=0.6503, train entropy min loss=0.6523, train fisher loss=0.9168, train intra-group fisher loss=312766.5625, train inter-group fisher loss=3411.5696
+epoch 56.0, valid transfer loss=0.6876, valid classifier loss=0.6382, valid entropy min loss=0.6594, valid fisher loss=0.4508, valid intra-group fisher loss=153794.6250, valid inter-group fisher loss=3411.5999
+epoch: 57.0, cosine validation accuracy: 0.58000, cosine training accuracy: 0.64833
+epoch 57.0: train total loss=1.9489, train transfer loss=0.3593, train classifier loss=0.6234, train entropy min loss=0.6611, train fisher loss=0.9331, train intra-group fisher loss=318403.9375, train inter-group fisher loss=3412.4658
+epoch 57.0, valid transfer loss=0.5702, valid classifier loss=0.6883, valid entropy min loss=0.6692, valid fisher loss=0.4553, valid intra-group fisher loss=155373.4375, valid inter-group fisher loss=3412.4810
+epoch: 58.0, cosine validation accuracy: 0.56500, cosine training accuracy: 0.64405
+epoch 58.0: train total loss=1.9970, train transfer loss=0.3974, train classifier loss=0.6656, train entropy min loss=0.6601, train fisher loss=0.9010, train intra-group fisher loss=307494.8750, train inter-group fisher loss=3412.8743
+epoch 58.0, valid transfer loss=0.6386, valid classifier loss=0.6547, valid entropy min loss=0.6572, valid fisher loss=0.4471, valid intra-group fisher loss=152583.5000, valid inter-group fisher loss=3412.9014
+epoch: 59.0, cosine validation accuracy: 0.57667, cosine training accuracy: 0.64690
+epoch 59.0: train total loss=1.9052, train transfer loss=0.3623, train classifier loss=0.6157, train entropy min loss=0.6581, train fisher loss=0.8942, train intra-group fisher loss=305206.8125, train inter-group fisher loss=3413.1389
+epoch 59.0, valid transfer loss=0.6030, valid classifier loss=0.6480, valid entropy min loss=0.6576, valid fisher loss=0.4516, valid intra-group fisher loss=154121.4375, valid inter-group fisher loss=3413.1428
+epoch: 60.0, cosine validation accuracy: 0.57833, cosine training accuracy: 0.64452
+epoch 60.0: train total loss=1.9462, train transfer loss=0.3746, train classifier loss=0.6369, train entropy min loss=0.6608, train fisher loss=0.9017, train intra-group fisher loss=307758.0000, train inter-group fisher loss=3413.0476
+epoch 60.0, valid transfer loss=0.6493, valid classifier loss=0.6624, valid entropy min loss=0.6488, valid fisher loss=0.4514, valid intra-group fisher loss=154053.7188, valid inter-group fisher loss=3413.0615
+epoch: 61.0, cosine validation accuracy: 0.57333, cosine training accuracy: 0.65048
+epoch 61.0: train total loss=1.9382, train transfer loss=0.3710, train classifier loss=0.6333, train entropy min loss=0.6549, train fisher loss=0.9011, train intra-group fisher loss=307564.2188, train inter-group fisher loss=3413.1951
+epoch 61.0, valid transfer loss=0.6811, valid classifier loss=0.6408, valid entropy min loss=0.6539, valid fisher loss=0.4446, valid intra-group fisher loss=151763.9688, valid inter-group fisher loss=3413.1975
+epoch: 62.0, cosine validation accuracy: 0.53333, cosine training accuracy: 0.63095
+epoch 62.0: train total loss=1.9348, train transfer loss=0.3710, train classifier loss=0.6293, train entropy min loss=0.6563, train fisher loss=0.9017, train intra-group fisher loss=307742.8125, train inter-group fisher loss=3412.9473
+epoch 62.0, valid transfer loss=0.6069, valid classifier loss=0.7218, valid entropy min loss=0.6592, valid fisher loss=0.4483, valid intra-group fisher loss=152997.1250, valid inter-group fisher loss=3412.9448
+epoch: 63.0, cosine validation accuracy: 0.59000, cosine training accuracy: 0.65024
+epoch 63.0: train total loss=1.9672, train transfer loss=0.4028, train classifier loss=0.6490, train entropy min loss=0.6610, train fisher loss=0.8824, train intra-group fisher loss=301135.7188, train inter-group fisher loss=3412.8564
+epoch 63.0, valid transfer loss=0.6715, valid classifier loss=0.6705, valid entropy min loss=0.6589, valid fisher loss=0.4399, valid intra-group fisher loss=150147.0625, valid inter-group fisher loss=3412.8440
+epoch: 64.0, cosine validation accuracy: 0.59167, cosine training accuracy: 0.65286
+epoch 64.0: train total loss=1.9959, train transfer loss=0.4312, train classifier loss=0.6487, train entropy min loss=0.6563, train fisher loss=0.8832, train intra-group fisher loss=301394.8125, train inter-group fisher loss=3412.5508
+epoch 64.0, valid transfer loss=0.5629, valid classifier loss=0.6659, valid entropy min loss=0.6561, valid fisher loss=0.4464, valid intra-group fisher loss=152323.6406, valid inter-group fisher loss=3412.5300
+epoch: 65.0, cosine validation accuracy: 0.57167, cosine training accuracy: 0.64548
+epoch 65.0: train total loss=1.8753, train transfer loss=0.3399, train classifier loss=0.6299, train entropy min loss=0.6595, train fisher loss=0.8726, train intra-group fisher loss=297763.7188, train inter-group fisher loss=3412.4072
+epoch 65.0, valid transfer loss=0.5378, valid classifier loss=0.6655, valid entropy min loss=0.6540, valid fisher loss=0.4445, valid intra-group fisher loss=151673.8750, valid inter-group fisher loss=3412.3838
+epoch: 66.0, cosine validation accuracy: 0.52167, cosine training accuracy: 0.59190
+epoch 66.0: train total loss=1.9564, train transfer loss=0.3805, train classifier loss=0.6397, train entropy min loss=0.6594, train fisher loss=0.9033, train intra-group fisher loss=308175.6875, train inter-group fisher loss=3411.6975
+epoch 66.0, valid transfer loss=0.5810, valid classifier loss=0.6993, valid entropy min loss=0.6502, valid fisher loss=0.4442, valid intra-group fisher loss=151552.1875, valid inter-group fisher loss=3411.6987
+epoch: 67.0, cosine validation accuracy: 0.58667, cosine training accuracy: 0.66286
+epoch 67.0: train total loss=1.9279, train transfer loss=0.3607, train classifier loss=0.6503, train entropy min loss=0.6579, train fisher loss=0.8841, train intra-group fisher loss=301581.7500, train inter-group fisher loss=3411.3464
+epoch 67.0, valid transfer loss=0.7219, valid classifier loss=0.6585, valid entropy min loss=0.6517, valid fisher loss=0.4341, valid intra-group fisher loss=148080.5312, valid inter-group fisher loss=3411.3250
+epoch: 68.0, cosine validation accuracy: 0.58333, cosine training accuracy: 0.64405
+epoch 68.0: train total loss=1.8763, train transfer loss=0.3559, train classifier loss=0.6232, train entropy min loss=0.6543, train fisher loss=0.8646, train intra-group fisher loss=294873.0000, train inter-group fisher loss=3410.6543
+epoch 68.0, valid transfer loss=0.5273, valid classifier loss=0.6886, valid entropy min loss=0.6622, valid fisher loss=0.4447, valid intra-group fisher loss=151679.3750, valid inter-group fisher loss=3410.6445
+epoch: 69.0, cosine validation accuracy: 0.55000, cosine training accuracy: 0.61119
+epoch 69.0: train total loss=1.8705, train transfer loss=0.3475, train classifier loss=0.6144, train entropy min loss=0.6494, train fisher loss=0.8760, train intra-group fisher loss=298716.1875, train inter-group fisher loss=3409.8745
+epoch 69.0, valid transfer loss=0.7150, valid classifier loss=0.7053, valid entropy min loss=0.6497, valid fisher loss=0.4311, valid intra-group fisher loss=146990.5938, valid inter-group fisher loss=3409.8127
+epoch: 70.0, cosine validation accuracy: 0.57333, cosine training accuracy: 0.65571
+epoch 70.0: train total loss=1.8962, train transfer loss=0.3425, train classifier loss=0.6435, train entropy min loss=0.6427, train fisher loss=0.8781, train intra-group fisher loss=299352.7500, train inter-group fisher loss=3409.2029
+epoch 70.0, valid transfer loss=0.5396, valid classifier loss=0.6546, valid entropy min loss=0.6559, valid fisher loss=0.4379, valid intra-group fisher loss=149287.1094, valid inter-group fisher loss=3409.1836
+epoch: 71.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.62881
+epoch 71.0: train total loss=1.8710, train transfer loss=0.3446, train classifier loss=0.6293, train entropy min loss=0.6445, train fisher loss=0.8650, train intra-group fisher loss=294768.4688, train inter-group fisher loss=3407.8562
+epoch 71.0, valid transfer loss=0.5760, valid classifier loss=0.7779, valid entropy min loss=0.6506, valid fisher loss=0.4362, valid intra-group fisher loss=148635.7500, valid inter-group fisher loss=3407.8191
+epoch: 72.0, cosine validation accuracy: 0.53833, cosine training accuracy: 0.62690
+epoch 72.0: train total loss=1.8491, train transfer loss=0.3461, train classifier loss=0.6091, train entropy min loss=0.6501, train fisher loss=0.8614, train intra-group fisher loss=293494.4375, train inter-group fisher loss=3407.1206
+epoch 72.0, valid transfer loss=0.7426, valid classifier loss=0.6965, valid entropy min loss=0.6625, valid fisher loss=0.4215, valid intra-group fisher loss=143602.9375, valid inter-group fisher loss=3407.0789
+epoch: 73.0, cosine validation accuracy: 0.59833, cosine training accuracy: 0.65167
+epoch 73.0: train total loss=1.8951, train transfer loss=0.3380, train classifier loss=0.6624, train entropy min loss=0.6541, train fisher loss=0.8620, train intra-group fisher loss=293561.5625, train inter-group fisher loss=3405.6733
+epoch 73.0, valid transfer loss=0.5644, valid classifier loss=0.6768, valid entropy min loss=0.6551, valid fisher loss=0.4303, valid intra-group fisher loss=146559.7344, valid inter-group fisher loss=3405.6582
+epoch: 74.0, cosine validation accuracy: 0.50500, cosine training accuracy: 0.58524
+epoch 74.0: train total loss=1.8833, train transfer loss=0.3607, train classifier loss=0.6220, train entropy min loss=0.6457, train fisher loss=0.8683, train intra-group fisher loss=295621.5000, train inter-group fisher loss=3404.6799
+epoch 74.0, valid transfer loss=0.8466, valid classifier loss=0.7091, valid entropy min loss=0.6645, valid fisher loss=0.4208, valid intra-group fisher loss=143253.8906, valid inter-group fisher loss=3404.6213
+epoch: 75.0, cosine validation accuracy: 0.58167, cosine training accuracy: 0.66667
+epoch 75.0: train total loss=2.0861, train transfer loss=0.5531, train classifier loss=0.6727, train entropy min loss=0.6859, train fisher loss=0.8260, train intra-group fisher loss=281095.3438, train inter-group fisher loss=3403.1382
+epoch 75.0, valid transfer loss=0.6975, valid classifier loss=0.6719, valid entropy min loss=0.6603, valid fisher loss=0.4307, valid intra-group fisher loss=146564.9375, valid inter-group fisher loss=3403.1213
+epoch: 76.0, cosine validation accuracy: 0.51167, cosine training accuracy: 0.59024
+epoch 76.0: train total loss=1.8562, train transfer loss=0.3813, train classifier loss=0.5923, train entropy min loss=0.6491, train fisher loss=0.8501, train intra-group fisher loss=289198.7500, train inter-group fisher loss=3401.7781
+epoch 76.0, valid transfer loss=0.6781, valid classifier loss=0.7196, valid entropy min loss=0.6526, valid fisher loss=0.4283, valid intra-group fisher loss=145682.1406, valid inter-group fisher loss=3401.6990
+epoch: 77.0, cosine validation accuracy: 0.53667, cosine training accuracy: 0.63690
+epoch 77.0: train total loss=1.8880, train transfer loss=0.3810, train classifier loss=0.6137, train entropy min loss=0.6451, train fisher loss=0.8611, train intra-group fisher loss=292791.6562, train inter-group fisher loss=3400.2446
+epoch 77.0, valid transfer loss=0.6170, valid classifier loss=0.6666, valid entropy min loss=0.6541, valid fisher loss=0.4348, valid intra-group fisher loss=147841.8594, valid inter-group fisher loss=3400.2266
+epoch: 78.0, cosine validation accuracy: 0.52167, cosine training accuracy: 0.60619
+epoch 78.0: train total loss=2.0499, train transfer loss=0.5187, train classifier loss=0.6670, train entropy min loss=0.6802, train fisher loss=0.8302, train intra-group fisher loss=282107.2812, train inter-group fisher loss=3398.2317
+epoch 78.0, valid transfer loss=0.7778, valid classifier loss=0.7155, valid entropy min loss=0.6496, valid fisher loss=0.4300, valid intra-group fisher loss=146115.7344, valid inter-group fisher loss=3398.1533
+epoch: 79.0, cosine validation accuracy: 0.53833, cosine training accuracy: 0.64452
+epoch 79.0: train total loss=1.8252, train transfer loss=0.3627, train classifier loss=0.5960, train entropy min loss=0.6497, train fisher loss=0.8340, train intra-group fisher loss=283297.8750, train inter-group fisher loss=3397.0254
+epoch 79.0, valid transfer loss=0.6126, valid classifier loss=0.7315, valid entropy min loss=0.6529, valid fisher loss=0.4167, valid intra-group fisher loss=141556.4219, valid inter-group fisher loss=3396.9783
+epoch: 80.0, cosine validation accuracy: 0.57000, cosine training accuracy: 0.67333
+epoch 80.0: train total loss=1.8171, train transfer loss=0.3485, train classifier loss=0.5912, train entropy min loss=0.6327, train fisher loss=0.8457, train intra-group fisher loss=287095.5000, train inter-group fisher loss=3394.6646
+epoch 80.0, valid transfer loss=0.6384, valid classifier loss=0.6546, valid entropy min loss=0.6502, valid fisher loss=0.4202, valid intra-group fisher loss=142653.3125, valid inter-group fisher loss=3394.6135
+epoch: 81.0, cosine validation accuracy: 0.59833, cosine training accuracy: 0.67690
+epoch 81.0: train total loss=1.9246, train transfer loss=0.4037, train classifier loss=0.6430, train entropy min loss=0.6451, train fisher loss=0.8457, train intra-group fisher loss=286969.6875, train inter-group fisher loss=3393.4080
+epoch 81.0, valid transfer loss=0.5845, valid classifier loss=0.6606, valid entropy min loss=0.6532, valid fisher loss=0.4182, valid intra-group fisher loss=141921.4219, valid inter-group fisher loss=3393.3337
+epoch: 82.0, cosine validation accuracy: 0.60333, cosine training accuracy: 0.65548
+epoch 82.0: train total loss=1.8258, train transfer loss=0.3620, train classifier loss=0.5917, train entropy min loss=0.6441, train fisher loss=0.8399, train intra-group fisher loss=284805.3125, train inter-group fisher loss=3391.0847
+epoch 82.0, valid transfer loss=0.5444, valid classifier loss=0.6766, valid entropy min loss=0.6433, valid fisher loss=0.4185, valid intra-group fisher loss=141900.8125, valid inter-group fisher loss=3391.0500
+epoch: 83.0, cosine validation accuracy: 0.55333, cosine training accuracy: 0.64619
+epoch 83.0: train total loss=1.8111, train transfer loss=0.3327, train classifier loss=0.6071, train entropy min loss=0.6423, train fisher loss=0.8392, train intra-group fisher loss=284471.0625, train inter-group fisher loss=3389.7881
+epoch 83.0, valid transfer loss=0.7024, valid classifier loss=0.7111, valid entropy min loss=0.6429, valid fisher loss=0.4221, valid intra-group fisher loss=143073.7188, valid inter-group fisher loss=3389.7026
+epoch: 84.0, cosine validation accuracy: 0.60000, cosine training accuracy: 0.67452
+epoch 84.0: train total loss=1.8617, train transfer loss=0.3544, train classifier loss=0.6317, train entropy min loss=0.6462, train fisher loss=0.8432, train intra-group fisher loss=285639.2500, train inter-group fisher loss=3387.5276
+epoch 84.0, valid transfer loss=0.5940, valid classifier loss=0.6487, valid entropy min loss=0.6471, valid fisher loss=0.4142, valid intra-group fisher loss=140327.4219, valid inter-group fisher loss=3387.5125
+epoch: 85.0, cosine validation accuracy: 0.48833, cosine training accuracy: 0.55452
+epoch 85.0: train total loss=1.8807, train transfer loss=0.3894, train classifier loss=0.6448, train entropy min loss=0.6560, train fisher loss=0.8137, train intra-group fisher loss=275468.0625, train inter-group fisher loss=3385.1863
+epoch 85.0, valid transfer loss=0.7294, valid classifier loss=0.6961, valid entropy min loss=0.6572, valid fisher loss=0.4104, valid intra-group fisher loss=138918.7812, valid inter-group fisher loss=3385.0549
+epoch: 86.0, cosine validation accuracy: 0.50833, cosine training accuracy: 0.59810
+epoch 86.0: train total loss=1.8294, train transfer loss=0.3269, train classifier loss=0.6515, train entropy min loss=0.6437, train fisher loss=0.8188, train intra-group fisher loss=277039.8750, train inter-group fisher loss=3383.5154
+epoch 86.0, valid transfer loss=0.6195, valid classifier loss=0.6785, valid entropy min loss=0.6502, valid fisher loss=0.4204, valid intra-group fisher loss=142236.0000, valid inter-group fisher loss=3383.4727
+epoch: 87.0, cosine validation accuracy: 0.52000, cosine training accuracy: 0.60619
+epoch 87.0: train total loss=1.8285, train transfer loss=0.3252, train classifier loss=0.6284, train entropy min loss=0.6420, train fisher loss=0.8428, train intra-group fisher loss=284925.0000, train inter-group fisher loss=3380.7104
+epoch 87.0, valid transfer loss=0.7056, valid classifier loss=0.6725, valid entropy min loss=0.6350, valid fisher loss=0.4105, valid intra-group fisher loss=138778.8125, valid inter-group fisher loss=3380.6301
+epoch: 88.0, cosine validation accuracy: 0.60333, cosine training accuracy: 0.67286
+epoch 88.0: train total loss=1.8304, train transfer loss=0.3428, train classifier loss=0.6054, train entropy min loss=0.6402, train fisher loss=0.8502, train intra-group fisher loss=287316.5625, train inter-group fisher loss=3379.3115
+epoch 88.0, valid transfer loss=0.6007, valid classifier loss=0.6542, valid entropy min loss=0.6448, valid fisher loss=0.4241, valid intra-group fisher loss=143307.8438, valid inter-group fisher loss=3379.2683
+epoch: 89.0, cosine validation accuracy: 0.59667, cosine training accuracy: 0.68619
+epoch 89.0: train total loss=1.8125, train transfer loss=0.3305, train classifier loss=0.5916, train entropy min loss=0.6339, train fisher loss=0.8586, train intra-group fisher loss=289901.0938, train inter-group fisher loss=3376.2734
+epoch 89.0, valid transfer loss=0.5322, valid classifier loss=0.6343, valid entropy min loss=0.6392, valid fisher loss=0.4141, valid intra-group fisher loss=139824.7188, valid inter-group fisher loss=3376.2214
+epoch: 90.0, cosine validation accuracy: 0.59333, cosine training accuracy: 0.68452
+epoch 90.0: train total loss=1.8116, train transfer loss=0.3464, train classifier loss=0.6005, train entropy min loss=0.6379, train fisher loss=0.8328, train intra-group fisher loss=281047.3125, train inter-group fisher loss=3374.6655
+epoch 90.0, valid transfer loss=0.6146, valid classifier loss=0.6771, valid entropy min loss=0.6400, valid fisher loss=0.4100, valid intra-group fisher loss=138346.5000, valid inter-group fisher loss=3374.5771
+epoch: 91.0, cosine validation accuracy: 0.60333, cosine training accuracy: 0.68833
+epoch 91.0: train total loss=1.7442, train transfer loss=0.3165, train classifier loss=0.5794, train entropy min loss=0.6435, train fisher loss=0.8162, train intra-group fisher loss=275174.5625, train inter-group fisher loss=3371.5505
+epoch 91.0, valid transfer loss=0.5555, valid classifier loss=0.7139, valid entropy min loss=0.6552, valid fisher loss=0.4180, valid intra-group fisher loss=140917.4375, valid inter-group fisher loss=3371.5134
+epoch: 92.0, cosine validation accuracy: 0.58500, cosine training accuracy: 0.66810
+epoch 92.0: train total loss=1.7853, train transfer loss=0.3569, train classifier loss=0.5692, train entropy min loss=0.6287, train fisher loss=0.8278, train intra-group fisher loss=278947.6875, train inter-group fisher loss=3369.5442
+epoch 92.0, valid transfer loss=0.5939, valid classifier loss=0.6246, valid entropy min loss=0.6497, valid fisher loss=0.4084, valid intra-group fisher loss=137620.9531, valid inter-group fisher loss=3369.4282
+epoch: 93.0, cosine validation accuracy: 0.51000, cosine training accuracy: 0.57881
+epoch 93.0: train total loss=1.8209, train transfer loss=0.3703, train classifier loss=0.6040, train entropy min loss=0.6303, train fisher loss=0.8151, train intra-group fisher loss=274421.1875, train inter-group fisher loss=3366.7256
+epoch 93.0, valid transfer loss=0.6406, valid classifier loss=0.7349, valid entropy min loss=0.6462, valid fisher loss=0.4116, valid intra-group fisher loss=138571.3438, valid inter-group fisher loss=3366.7031
+epoch: 94.0, cosine validation accuracy: 0.59000, cosine training accuracy: 0.68262
+epoch 94.0: train total loss=1.7821, train transfer loss=0.3352, train classifier loss=0.5871, train entropy min loss=0.6331, train fisher loss=0.8281, train intra-group fisher loss=278550.7188, train inter-group fisher loss=3363.6711
+epoch 94.0, valid transfer loss=0.5489, valid classifier loss=0.6887, valid entropy min loss=0.6278, valid fisher loss=0.4131, valid intra-group fisher loss=138962.3438, valid inter-group fisher loss=3363.5574
+epoch: 95.0, cosine validation accuracy: 0.60167, cosine training accuracy: 0.69048
+epoch 95.0: train total loss=1.8001, train transfer loss=0.3552, train classifier loss=0.6053, train entropy min loss=0.6359, train fisher loss=0.8079, train intra-group fisher loss=271564.6562, train inter-group fisher loss=3361.4895
+epoch 95.0, valid transfer loss=0.6355, valid classifier loss=0.6289, valid entropy min loss=0.6423, valid fisher loss=0.4026, valid intra-group fisher loss=135332.3906, valid inter-group fisher loss=3361.4307
+epoch: 96.0, cosine validation accuracy: 0.60500, cosine training accuracy: 0.67333
+epoch 96.0: train total loss=1.7614, train transfer loss=0.3131, train classifier loss=0.5976, train entropy min loss=0.6270, train fisher loss=0.8193, train intra-group fisher loss=275080.5938, train inter-group fisher loss=3357.5884
+epoch 96.0, valid transfer loss=0.6083, valid classifier loss=0.6946, valid entropy min loss=0.6462, valid fisher loss=0.4063, valid intra-group fisher loss=136406.5000, valid inter-group fisher loss=3357.4878
+epoch: 97.0, cosine validation accuracy: 0.59167, cosine training accuracy: 0.69333
+epoch 97.0: train total loss=1.8279, train transfer loss=0.3589, train classifier loss=0.6116, train entropy min loss=0.6436, train fisher loss=0.8252, train intra-group fisher loss=276921.5000, train inter-group fisher loss=3355.7249
+epoch 97.0, valid transfer loss=0.5834, valid classifier loss=0.6726, valid entropy min loss=0.6470, valid fisher loss=0.4025, valid intra-group fisher loss=135053.3438, valid inter-group fisher loss=3355.6418
+epoch: 98.0, cosine validation accuracy: 0.60500, cosine training accuracy: 0.68857
+epoch 98.0: train total loss=1.8000, train transfer loss=0.3530, train classifier loss=0.6041, train entropy min loss=0.6433, train fisher loss=0.8107, train intra-group fisher loss=271724.8125, train inter-group fisher loss=3351.6990
+epoch 98.0, valid transfer loss=0.6539, valid classifier loss=0.6671, valid entropy min loss=0.6622, valid fisher loss=0.4055, valid intra-group fisher loss=135909.6875, valid inter-group fisher loss=3351.6260
+epoch: 99.0, cosine validation accuracy: 0.50167, cosine training accuracy: 0.57857
+epoch 99.0: train total loss=1.7911, train transfer loss=0.3380, train classifier loss=0.6021, train entropy min loss=0.6368, train fisher loss=0.8192, train intra-group fisher loss=274376.3750, train inter-group fisher loss=3349.5188
+epoch 99.0, valid transfer loss=0.6440, valid classifier loss=0.6983, valid entropy min loss=0.6328, valid fisher loss=0.4078, valid intra-group fisher loss=136601.3906, valid inter-group fisher loss=3349.3945
+epoch: 100.0, cosine validation accuracy: 0.61333, cosine training accuracy: 0.70357
+epoch 100.0: train total loss=1.8140, train transfer loss=0.3472, train classifier loss=0.6307, train entropy min loss=0.6299, train fisher loss=0.8047, train intra-group fisher loss=269225.8438, train inter-group fisher loss=3345.8723
+epoch 100.0, valid transfer loss=0.5688, valid classifier loss=0.6318, valid entropy min loss=0.6302, valid fisher loss=0.4028, valid intra-group fisher loss=134757.6406, valid inter-group fisher loss=3345.8374
+epoch: 101.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.62214
+epoch 101.0: train total loss=1.7419, train transfer loss=0.3163, train classifier loss=0.5672, train entropy min loss=0.6272, train fisher loss=0.8271, train intra-group fisher loss=276488.1562, train inter-group fisher loss=3343.0139
+epoch 101.0, valid transfer loss=0.5988, valid classifier loss=0.6085, valid entropy min loss=0.6330, valid fisher loss=0.3988, valid intra-group fisher loss=133306.3594, valid inter-group fisher loss=3342.8374
+epoch: 102.0, cosine validation accuracy: 0.57500, cosine training accuracy: 0.66286
+epoch 102.0: train total loss=1.7719, train transfer loss=0.3426, train classifier loss=0.5948, train entropy min loss=0.6200, train fisher loss=0.8035, train intra-group fisher loss=268365.5625, train inter-group fisher loss=3339.9509
+epoch 102.0, valid transfer loss=0.5946, valid classifier loss=0.6684, valid entropy min loss=0.6381, valid fisher loss=0.4065, valid intra-group fisher loss=135769.1406, valid inter-group fisher loss=3339.9216
+epoch: 103.0, cosine validation accuracy: 0.50333, cosine training accuracy: 0.58071
+epoch 103.0: train total loss=1.8022, train transfer loss=0.3311, train classifier loss=0.6428, train entropy min loss=0.6343, train fisher loss=0.7966, train intra-group fisher loss=265744.8750, train inter-group fisher loss=3336.1172
+epoch 103.0, valid transfer loss=0.6135, valid classifier loss=0.6617, valid entropy min loss=0.6248, valid fisher loss=0.3955, valid intra-group fisher loss=131922.5000, valid inter-group fisher loss=3335.9731
+epoch: 104.0, cosine validation accuracy: 0.50833, cosine training accuracy: 0.57524
+epoch 104.0: train total loss=1.7060, train transfer loss=0.3167, train classifier loss=0.5483, train entropy min loss=0.6204, train fisher loss=0.8100, train intra-group fisher loss=270022.8125, train inter-group fisher loss=3333.8074
+epoch 104.0, valid transfer loss=0.6149, valid classifier loss=0.7142, valid entropy min loss=0.6343, valid fisher loss=0.3993, valid intra-group fisher loss=133124.4062, valid inter-group fisher loss=3333.7339
+epoch: 105.0, cosine validation accuracy: 0.50667, cosine training accuracy: 0.57119
+epoch 105.0: train total loss=1.7863, train transfer loss=0.3435, train classifier loss=0.6173, train entropy min loss=0.6310, train fisher loss=0.7939, train intra-group fisher loss=264334.5625, train inter-group fisher loss=3329.4019
+epoch 105.0, valid transfer loss=0.6618, valid classifier loss=0.7770, valid entropy min loss=0.6375, valid fisher loss=0.3936, valid intra-group fisher loss=131027.4531, valid inter-group fisher loss=3329.2905
+epoch: 106.0, cosine validation accuracy: 0.61333, cosine training accuracy: 0.71095
+epoch 106.0: train total loss=1.7873, train transfer loss=0.3353, train classifier loss=0.6164, train entropy min loss=0.6216, train fisher loss=0.8046, train intra-group fisher loss=267711.6250, train inter-group fisher loss=3327.2549
+epoch 106.0, valid transfer loss=0.5775, valid classifier loss=0.6005, valid entropy min loss=0.6169, valid fisher loss=0.4000, valid intra-group fisher loss=133096.8750, valid inter-group fisher loss=3327.1492
+epoch: 107.0, cosine validation accuracy: 0.59333, cosine training accuracy: 0.69714
+epoch 107.0: train total loss=1.7393, train transfer loss=0.2971, train classifier loss=0.5986, train entropy min loss=0.6105, train fisher loss=0.8130, train intra-group fisher loss=270197.5625, train inter-group fisher loss=3323.2600
+epoch 107.0, valid transfer loss=0.5844, valid classifier loss=0.6426, valid entropy min loss=0.6310, valid fisher loss=0.4028, valid intra-group fisher loss=133869.0000, valid inter-group fisher loss=3323.2021
+epoch: 108.0, cosine validation accuracy: 0.60333, cosine training accuracy: 0.70476
+epoch 108.0: train total loss=1.7427, train transfer loss=0.3410, train classifier loss=0.5845, train entropy min loss=0.6189, train fisher loss=0.7863, train intra-group fisher loss=261132.1562, train inter-group fisher loss=3320.8608
+epoch 108.0, valid transfer loss=0.6076, valid classifier loss=0.6871, valid entropy min loss=0.6192, valid fisher loss=0.3944, valid intra-group fisher loss=130977.8750, valid inter-group fisher loss=3320.7073
+epoch: 109.0, cosine validation accuracy: 0.50667, cosine training accuracy: 0.57262
+epoch 109.0: train total loss=1.7736, train transfer loss=0.3733, train classifier loss=0.5865, train entropy min loss=0.6221, train fisher loss=0.7827, train intra-group fisher loss=259605.5000, train inter-group fisher loss=3316.7495
+epoch 109.0, valid transfer loss=0.6541, valid classifier loss=0.6894, valid entropy min loss=0.6126, valid fisher loss=0.3985, valid intra-group fisher loss=132185.0156, valid inter-group fisher loss=3316.7161
+epoch: 110.0, cosine validation accuracy: 0.57000, cosine training accuracy: 0.65357
+epoch 110.0: train total loss=1.7766, train transfer loss=0.3550, train classifier loss=0.6105, train entropy min loss=0.6257, train fisher loss=0.7798, train intra-group fisher loss=258397.3438, train inter-group fisher loss=3313.4309
+epoch 110.0, valid transfer loss=0.5453, valid classifier loss=0.6140, valid entropy min loss=0.6246, valid fisher loss=0.3968, valid intra-group fisher loss=131463.8594, valid inter-group fisher loss=3313.2466
+epoch: 111.0, cosine validation accuracy: 0.61333, cosine training accuracy: 0.71452
+epoch 111.0: train total loss=1.7673, train transfer loss=0.3631, train classifier loss=0.5798, train entropy min loss=0.6146, train fisher loss=0.7937, train intra-group fisher loss=262725.4688, train inter-group fisher loss=3310.2817
+epoch 111.0, valid transfer loss=0.5294, valid classifier loss=0.6587, valid entropy min loss=0.6467, valid fisher loss=0.3938, valid intra-group fisher loss=130368.7500, valid inter-group fisher loss=3310.2271
+epoch: 112.0, cosine validation accuracy: 0.61500, cosine training accuracy: 0.71238
+epoch 112.0: train total loss=1.7048, train transfer loss=0.3189, train classifier loss=0.5622, train entropy min loss=0.6106, train fisher loss=0.7932, train intra-group fisher loss=262197.1250, train inter-group fisher loss=3305.7366
+epoch 112.0, valid transfer loss=0.5228, valid classifier loss=0.6845, valid entropy min loss=0.6336, valid fisher loss=0.3978, valid intra-group fisher loss=131496.6250, valid inter-group fisher loss=3305.5923
+epoch: 113.0, cosine validation accuracy: 0.60000, cosine training accuracy: 0.71357
+epoch 113.0: train total loss=1.7504, train transfer loss=0.3109, train classifier loss=0.6151, train entropy min loss=0.6107, train fisher loss=0.7940, train intra-group fisher loss=262273.5000, train inter-group fisher loss=3303.3840
+epoch 113.0, valid transfer loss=0.6399, valid classifier loss=0.6124, valid entropy min loss=0.6271, valid fisher loss=0.3914, valid intra-group fisher loss=129294.4219, valid inter-group fisher loss=3303.2922
+epoch: 114.0, cosine validation accuracy: 0.60167, cosine training accuracy: 0.67190
+epoch 114.0: train total loss=1.7033, train transfer loss=0.3389, train classifier loss=0.5536, train entropy min loss=0.6023, train fisher loss=0.7807, train intra-group fisher loss=257514.4375, train inter-group fisher loss=3298.4360
+epoch 114.0, valid transfer loss=0.5317, valid classifier loss=0.6329, valid entropy min loss=0.6151, valid fisher loss=0.3900, valid intra-group fisher loss=128627.9688, valid inter-group fisher loss=3298.3257
+epoch: 115.0, cosine validation accuracy: 0.60500, cosine training accuracy: 0.69500
+epoch 115.0: train total loss=1.7048, train transfer loss=0.3090, train classifier loss=0.5763, train entropy min loss=0.6084, train fisher loss=0.7890, train intra-group fisher loss=260065.4375, train inter-group fisher loss=3295.9541
+epoch 115.0, valid transfer loss=0.5440, valid classifier loss=0.6512, valid entropy min loss=0.6163, valid fisher loss=0.3914, valid intra-group fisher loss=128982.2344, valid inter-group fisher loss=3295.8123
+epoch: 116.0, cosine validation accuracy: 0.51167, cosine training accuracy: 0.56548
+epoch 116.0: train total loss=1.7103, train transfer loss=0.3157, train classifier loss=0.5705, train entropy min loss=0.6089, train fisher loss=0.7936, train intra-group fisher loss=261187.8125, train inter-group fisher loss=3290.9719
+epoch 116.0, valid transfer loss=0.6157, valid classifier loss=0.7186, valid entropy min loss=0.6145, valid fisher loss=0.3885, valid intra-group fisher loss=127861.6719, valid inter-group fisher loss=3290.9065
+epoch: 117.0, cosine validation accuracy: 0.53167, cosine training accuracy: 0.60643
+epoch 117.0: train total loss=1.7201, train transfer loss=0.3484, train classifier loss=0.5605, train entropy min loss=0.6202, train fisher loss=0.7802, train intra-group fisher loss=256535.5625, train inter-group fisher loss=3288.0115
+epoch 117.0, valid transfer loss=0.5922, valid classifier loss=0.7201, valid entropy min loss=0.6110, valid fisher loss=0.3939, valid intra-group fisher loss=129498.5156, valid inter-group fisher loss=3287.8352
+epoch: 118.0, cosine validation accuracy: 0.56500, cosine training accuracy: 0.64238
+epoch 118.0: train total loss=1.7318, train transfer loss=0.3447, train classifier loss=0.5876, train entropy min loss=0.6220, train fisher loss=0.7684, train intra-group fisher loss=252321.6094, train inter-group fisher loss=3283.9382
+epoch 118.0, valid transfer loss=0.5712, valid classifier loss=0.6372, valid entropy min loss=0.6367, valid fisher loss=0.3907, valid intra-group fisher loss=128304.3125, valid inter-group fisher loss=3283.9177
+epoch: 119.0, cosine validation accuracy: 0.49333, cosine training accuracy: 0.55738
+epoch 119.0: train total loss=1.6255, train transfer loss=0.2991, train classifier loss=0.5132, train entropy min loss=0.5911, train fisher loss=0.7836, train intra-group fisher loss=257003.2656, train inter-group fisher loss=3279.7493
+epoch 119.0, valid transfer loss=0.6876, valid classifier loss=0.6208, valid entropy min loss=0.6292, valid fisher loss=0.3918, valid intra-group fisher loss=128477.2344, valid inter-group fisher loss=3279.5459
+epoch: 120.0, cosine validation accuracy: 0.61333, cosine training accuracy: 0.72119
+epoch 120.0: train total loss=1.9624, train transfer loss=0.4998, train classifier loss=0.6795, train entropy min loss=0.6756, train fisher loss=0.7494, train intra-group fisher loss=245551.1875, train inter-group fisher loss=3276.6499
+epoch 120.0, valid transfer loss=0.6259, valid classifier loss=0.6742, valid entropy min loss=0.6051, valid fisher loss=0.4016, valid intra-group fisher loss=131584.4688, valid inter-group fisher loss=3276.5776
+epoch: 121.0, cosine validation accuracy: 0.50667, cosine training accuracy: 0.57500
+epoch 121.0: train total loss=1.7031, train transfer loss=0.3178, train classifier loss=0.5799, train entropy min loss=0.6061, train fisher loss=0.7751, train intra-group fisher loss=253583.5156, train inter-group fisher loss=3271.7917
+epoch 121.0, valid transfer loss=0.6171, valid classifier loss=0.7500, valid entropy min loss=0.6010, valid fisher loss=0.3923, valid intra-group fisher loss=128344.7578, valid inter-group fisher loss=3271.6509
+epoch: 122.0, cosine validation accuracy: 0.61000, cosine training accuracy: 0.72905
+epoch 122.0: train total loss=1.6892, train transfer loss=0.3328, train classifier loss=0.5516, train entropy min loss=0.6132, train fisher loss=0.7741, train intra-group fisher loss=253084.2188, train inter-group fisher loss=3269.3750
+epoch 122.0, valid transfer loss=0.5661, valid classifier loss=0.5907, valid entropy min loss=0.6151, valid fisher loss=0.3821, valid intra-group fisher loss=124912.5469, valid inter-group fisher loss=3269.2495
+epoch: 123.0, cosine validation accuracy: 0.61333, cosine training accuracy: 0.71524
+epoch 123.0: train total loss=1.7749, train transfer loss=0.3265, train classifier loss=0.6180, train entropy min loss=0.6001, train fisher loss=0.8004, train intra-group fisher loss=261268.8906, train inter-group fisher loss=3264.1636
+epoch 123.0, valid transfer loss=0.5310, valid classifier loss=0.6099, valid entropy min loss=0.6204, valid fisher loss=0.3833, valid intra-group fisher loss=125104.4375, valid inter-group fisher loss=3264.0750
+epoch: 124.0, cosine validation accuracy: 0.61833, cosine training accuracy: 0.65833
+epoch 124.0: train total loss=1.7457, train transfer loss=0.3245, train classifier loss=0.6241, train entropy min loss=0.5890, train fisher loss=0.7676, train intra-group fisher loss=250358.8750, train inter-group fisher loss=3261.6213
+epoch 124.0, valid transfer loss=0.5275, valid classifier loss=0.6770, valid entropy min loss=0.5753, valid fisher loss=0.3847, valid intra-group fisher loss=125474.9219, valid inter-group fisher loss=3261.4519
+epoch: 125.0, cosine validation accuracy: 0.62833, cosine training accuracy: 0.70000
+epoch 125.0: train total loss=1.6438, train transfer loss=0.3143, train classifier loss=0.5269, train entropy min loss=0.5873, train fisher loss=0.7732, train intra-group fisher loss=251812.0469, train inter-group fisher loss=3256.7534
+epoch 125.0, valid transfer loss=0.5793, valid classifier loss=0.6585, valid entropy min loss=0.6039, valid fisher loss=0.3859, valid intra-group fisher loss=125686.6016, valid inter-group fisher loss=3256.7009
+epoch: 126.0, cosine validation accuracy: 0.54000, cosine training accuracy: 0.60786
+epoch 126.0: train total loss=1.6965, train transfer loss=0.3347, train classifier loss=0.5641, train entropy min loss=0.6124, train fisher loss=0.7671, train intra-group fisher loss=249556.6094, train inter-group fisher loss=3253.3467
+epoch 126.0, valid transfer loss=0.5462, valid classifier loss=0.6419, valid entropy min loss=0.6307, valid fisher loss=0.3879, valid intra-group fisher loss=126188.9062, valid inter-group fisher loss=3253.1350
+epoch: 127.0, cosine validation accuracy: 0.63500, cosine training accuracy: 0.73357
+epoch 127.0: train total loss=1.6313, train transfer loss=0.2894, train classifier loss=0.5276, train entropy min loss=0.5863, train fisher loss=0.7850, train intra-group fisher loss=255070.1875, train inter-group fisher loss=3249.4180
+epoch 127.0, valid transfer loss=0.5618, valid classifier loss=0.6057, valid entropy min loss=0.6138, valid fisher loss=0.3936, valid intra-group fisher loss=127902.2656, valid inter-group fisher loss=3249.3853
+epoch: 128.0, cosine validation accuracy: 0.61500, cosine training accuracy: 0.70571
+epoch 128.0: train total loss=1.6533, train transfer loss=0.3131, train classifier loss=0.5270, train entropy min loss=0.5837, train fisher loss=0.7840, train intra-group fisher loss=254405.8750, train inter-group fisher loss=3244.9197
+epoch 128.0, valid transfer loss=0.6134, valid classifier loss=0.7081, valid entropy min loss=0.6025, valid fisher loss=0.3906, valid intra-group fisher loss=126723.6250, valid inter-group fisher loss=3244.7463
+epoch: 129.0, cosine validation accuracy: 0.55833, cosine training accuracy: 0.63048
+epoch 129.0: train total loss=1.7123, train transfer loss=0.3140, train classifier loss=0.5786, train entropy min loss=0.5842, train fisher loss=0.7904, train intra-group fisher loss=256253.8125, train inter-group fisher loss=3242.0027
+epoch 129.0, valid transfer loss=0.5777, valid classifier loss=0.6310, valid entropy min loss=0.6121, valid fisher loss=0.3891, valid intra-group fisher loss=126133.0312, valid inter-group fisher loss=3241.9204
+epoch: 130.0, cosine validation accuracy: 0.60833, cosine training accuracy: 0.69571
+epoch 130.0: train total loss=1.7123, train transfer loss=0.3186, train classifier loss=0.5955, train entropy min loss=0.5977, train fisher loss=0.7683, train intra-group fisher loss=248664.7188, train inter-group fisher loss=3236.4385
+epoch 130.0, valid transfer loss=0.5543, valid classifier loss=0.6172, valid entropy min loss=0.6107, valid fisher loss=0.3838, valid intra-group fisher loss=124225.6797, valid inter-group fisher loss=3236.3135
+epoch: 131.0, cosine validation accuracy: 0.49500, cosine training accuracy: 0.55262
+epoch 131.0: train total loss=1.6854, train transfer loss=0.3199, train classifier loss=0.5650, train entropy min loss=0.5861, train fisher loss=0.7712, train intra-group fisher loss=249413.6094, train inter-group fisher loss=3233.9138
+epoch 131.0, valid transfer loss=0.8098, valid classifier loss=0.7877, valid entropy min loss=0.6038, valid fisher loss=0.3805, valid intra-group fisher loss=123057.8750, valid inter-group fisher loss=3233.7703
+epoch: 132.0, cosine validation accuracy: 0.50333, cosine training accuracy: 0.55571
+epoch 132.0: train total loss=1.6478, train transfer loss=0.3077, train classifier loss=0.5451, train entropy min loss=0.6065, train fisher loss=0.7647, train intra-group fisher loss=246867.2969, train inter-group fisher loss=3228.4731
+epoch 132.0, valid transfer loss=0.6825, valid classifier loss=0.6936, valid entropy min loss=0.5908, valid fisher loss=0.3801, valid intra-group fisher loss=122717.8750, valid inter-group fisher loss=3228.3853
+epoch: 133.0, cosine validation accuracy: 0.61167, cosine training accuracy: 0.68619
+epoch 133.0: train total loss=1.7166, train transfer loss=0.3235, train classifier loss=0.5845, train entropy min loss=0.5887, train fisher loss=0.7791, train intra-group fisher loss=251316.0625, train inter-group fisher loss=3225.6885
+epoch 133.0, valid transfer loss=0.5545, valid classifier loss=0.6102, valid entropy min loss=0.6074, valid fisher loss=0.3805, valid intra-group fisher loss=122728.2344, valid inter-group fisher loss=3225.5200
+epoch: 134.0, cosine validation accuracy: 0.62833, cosine training accuracy: 0.70214
+epoch 134.0: train total loss=1.6748, train transfer loss=0.3042, train classifier loss=0.5814, train entropy min loss=0.6018, train fisher loss=0.7591, train intra-group fisher loss=244499.2188, train inter-group fisher loss=3221.0649
+epoch 134.0, valid transfer loss=0.5943, valid classifier loss=0.6172, valid entropy min loss=0.6084, valid fisher loss=0.3804, valid intra-group fisher loss=122525.7656, valid inter-group fisher loss=3221.0208
+epoch: 135.0, cosine validation accuracy: 0.53500, cosine training accuracy: 0.60667
+epoch 135.0: train total loss=1.6437, train transfer loss=0.3101, train classifier loss=0.5332, train entropy min loss=0.5842, train fisher loss=0.7712, train intra-group fisher loss=248108.5625, train inter-group fisher loss=3217.3086
+epoch 135.0, valid transfer loss=0.6128, valid classifier loss=0.7559, valid entropy min loss=0.6015, valid fisher loss=0.3786, valid intra-group fisher loss=121801.8828, valid inter-group fisher loss=3217.0942
+epoch: 136.0, cosine validation accuracy: 0.64500, cosine training accuracy: 0.74119
+epoch 136.0: train total loss=1.7094, train transfer loss=0.3373, train classifier loss=0.5819, train entropy min loss=0.5842, train fisher loss=0.7610, train intra-group fisher loss=244552.0156, train inter-group fisher loss=3213.5310
+epoch 136.0, valid transfer loss=0.5311, valid classifier loss=0.5829, valid entropy min loss=0.5947, valid fisher loss=0.3854, valid intra-group fisher loss=123861.6484, valid inter-group fisher loss=3213.4822
+epoch: 137.0, cosine validation accuracy: 0.58667, cosine training accuracy: 0.64667
+epoch 137.0: train total loss=1.6286, train transfer loss=0.3118, train classifier loss=0.5154, train entropy min loss=0.5904, train fisher loss=0.7719, train intra-group fisher loss=247650.9375, train inter-group fisher loss=3208.5244
+epoch 137.0, valid transfer loss=0.5425, valid classifier loss=0.6101, valid entropy min loss=0.6113, valid fisher loss=0.3814, valid intra-group fisher loss=122375.5703, valid inter-group fisher loss=3208.3508
+epoch: 138.0, cosine validation accuracy: 0.64833, cosine training accuracy: 0.73048
+epoch 138.0: train total loss=1.6088, train transfer loss=0.3045, train classifier loss=0.5080, train entropy min loss=0.5806, train fisher loss=0.7672, train intra-group fisher loss=245954.0625, train inter-group fisher loss=3205.6604
+epoch 138.0, valid transfer loss=0.5653, valid classifier loss=0.5591, valid entropy min loss=0.6011, valid fisher loss=0.3837, valid intra-group fisher loss=122996.6953, valid inter-group fisher loss=3205.5620
+epoch: 139.0, cosine validation accuracy: 0.49500, cosine training accuracy: 0.55905
+epoch 139.0: train total loss=1.6880, train transfer loss=0.3311, train classifier loss=0.5674, train entropy min loss=0.5619, train fisher loss=0.7615, train intra-group fisher loss=243690.6094, train inter-group fisher loss=3200.2205
+epoch 139.0, valid transfer loss=0.7561, valid classifier loss=0.7763, valid entropy min loss=0.6060, valid fisher loss=0.3837, valid intra-group fisher loss=122773.4688, valid inter-group fisher loss=3200.0903
+epoch: 140.0, cosine validation accuracy: 0.65500, cosine training accuracy: 0.74071
+epoch 140.0: train total loss=1.6775, train transfer loss=0.3275, train classifier loss=0.5664, train entropy min loss=0.5988, train fisher loss=0.7537, train intra-group fisher loss=240995.3438, train inter-group fisher loss=3197.5322
+epoch 140.0, valid transfer loss=0.6742, valid classifier loss=0.6477, valid entropy min loss=0.5916, valid fisher loss=0.3807, valid intra-group fisher loss=121727.6328, valid inter-group fisher loss=3197.3735
+epoch: 141.0, cosine validation accuracy: 0.50833, cosine training accuracy: 0.56738
+epoch 141.0: train total loss=1.6651, train transfer loss=0.3002, train classifier loss=0.5605, train entropy min loss=0.5553, train fisher loss=0.7766, train intra-group fisher loss=247890.2969, train inter-group fisher loss=3192.0435
+epoch 141.0, valid transfer loss=0.7007, valid classifier loss=0.7534, valid entropy min loss=0.5767, valid fisher loss=0.3769, valid intra-group fisher loss=120295.7812, valid inter-group fisher loss=3191.9717
+epoch: 142.0, cosine validation accuracy: 0.64333, cosine training accuracy: 0.72571
+epoch 142.0: train total loss=1.6604, train transfer loss=0.3306, train classifier loss=0.5381, train entropy min loss=0.5535, train fisher loss=0.7640, train intra-group fisher loss=243642.7188, train inter-group fisher loss=3188.8896
+epoch 142.0, valid transfer loss=0.5520, valid classifier loss=0.6643, valid entropy min loss=0.5838, valid fisher loss=0.3748, valid intra-group fisher loss=119526.1875, valid inter-group fisher loss=3188.6917
+epoch: 143.0, cosine validation accuracy: 0.66500, cosine training accuracy: 0.75167
+epoch 143.0: train total loss=1.7064, train transfer loss=0.3046, train classifier loss=0.6030, train entropy min loss=0.5942, train fisher loss=0.7691, train intra-group fisher loss=244892.3438, train inter-group fisher loss=3184.2546
+epoch 143.0, valid transfer loss=0.5151, valid classifier loss=0.6015, valid entropy min loss=0.5869, valid fisher loss=0.3801, valid intra-group fisher loss=121021.8594, valid inter-group fisher loss=3184.2261
+epoch: 144.0, cosine validation accuracy: 0.65000, cosine training accuracy: 0.75119
+epoch 144.0: train total loss=1.6862, train transfer loss=0.3239, train classifier loss=0.5841, train entropy min loss=0.5893, train fisher loss=0.7488, train intra-group fisher loss=238129.7656, train inter-group fisher loss=3180.0562
+epoch 144.0, valid transfer loss=0.5759, valid classifier loss=0.6553, valid entropy min loss=0.5883, valid fisher loss=0.3803, valid intra-group fisher loss=120916.6562, valid inter-group fisher loss=3179.8499
+epoch: 145.0, cosine validation accuracy: 0.65500, cosine training accuracy: 0.73500
+epoch 145.0: train total loss=1.6418, train transfer loss=0.3259, train classifier loss=0.5411, train entropy min loss=0.5851, train fisher loss=0.7455, train intra-group fisher loss=236837.8125, train inter-group fisher loss=3176.7490
+epoch 145.0, valid transfer loss=0.5509, valid classifier loss=0.7096, valid entropy min loss=0.5894, valid fisher loss=0.3792, valid intra-group fisher loss=120457.9531, valid inter-group fisher loss=3176.6833
+epoch: 146.0, cosine validation accuracy: 0.50667, cosine training accuracy: 0.55071
+epoch 146.0: train total loss=1.6741, train transfer loss=0.3029, train classifier loss=0.5699, train entropy min loss=0.5544, train fisher loss=0.7736, train intra-group fisher loss=245341.4688, train inter-group fisher loss=3171.5327
+epoch 146.0, valid transfer loss=0.6528, valid classifier loss=0.8094, valid entropy min loss=0.5688, valid fisher loss=0.3833, valid intra-group fisher loss=121544.0078, valid inter-group fisher loss=3171.3796
+epoch: 147.0, cosine validation accuracy: 0.56833, cosine training accuracy: 0.63976
+epoch 147.0: train total loss=1.6920, train transfer loss=0.3439, train classifier loss=0.5466, train entropy min loss=0.5687, train fisher loss=0.7730, train intra-group fisher loss=244939.1250, train inter-group fisher loss=3168.7710
+epoch 147.0, valid transfer loss=0.5769, valid classifier loss=0.7422, valid entropy min loss=0.5964, valid fisher loss=0.3772, valid intra-group fisher loss=119512.8438, valid inter-group fisher loss=3168.6660
+epoch: 148.0, cosine validation accuracy: 0.65833, cosine training accuracy: 0.75952
+epoch 148.0: train total loss=1.6995, train transfer loss=0.3361, train classifier loss=0.5635, train entropy min loss=0.5759, train fisher loss=0.7711, train intra-group fisher loss=243890.4375, train inter-group fisher loss=3162.9116
+epoch 148.0, valid transfer loss=0.5185, valid classifier loss=0.5660, valid entropy min loss=0.5740, valid fisher loss=0.3788, valid intra-group fisher loss=119818.7500, valid inter-group fisher loss=3162.8015
+epoch: 149.0, cosine validation accuracy: 0.55167, cosine training accuracy: 0.61238
+epoch 149.0: train total loss=1.6175, train transfer loss=0.3098, train classifier loss=0.5236, train entropy min loss=0.5869, train fisher loss=0.7548, train intra-group fisher loss=238533.6250, train inter-group fisher loss=3160.2268
+epoch 149.0, valid transfer loss=0.6350, valid classifier loss=0.6276, valid entropy min loss=0.5795, valid fisher loss=0.3741, valid intra-group fisher loss=118227.2734, valid inter-group fisher loss=3160.0581
+epoch: 150.0, cosine validation accuracy: 0.65667, cosine training accuracy: 0.75929
+epoch 150.0: train total loss=1.6514, train transfer loss=0.3414, train classifier loss=0.5297, train entropy min loss=0.5822, train fisher loss=0.7512, train intra-group fisher loss=236990.7812, train inter-group fisher loss=3154.8455
+epoch 150.0, valid transfer loss=0.5162, valid classifier loss=0.6348, valid entropy min loss=0.5752, valid fisher loss=0.3735, valid intra-group fisher loss=117840.0703, valid inter-group fisher loss=3154.7788
+epoch: 151.0, cosine validation accuracy: 0.66167, cosine training accuracy: 0.75810
+epoch 151.0: train total loss=1.9277, train transfer loss=0.4890, train classifier loss=0.6798, train entropy min loss=0.6702, train fisher loss=0.7253, train intra-group fisher loss=228591.6719, train inter-group fisher loss=3151.5454
+epoch 151.0, valid transfer loss=0.6741, valid classifier loss=0.8226, valid entropy min loss=0.5611, valid fisher loss=0.3797, valid intra-group fisher loss=119644.3438, valid inter-group fisher loss=3151.3086
+epoch: 152.0, cosine validation accuracy: 0.54333, cosine training accuracy: 0.59667
+epoch 152.0: train total loss=1.6350, train transfer loss=0.3019, train classifier loss=0.5502, train entropy min loss=0.5699, train fisher loss=0.7543, train intra-group fisher loss=237393.1250, train inter-group fisher loss=3147.0703
+epoch 152.0, valid transfer loss=0.6449, valid classifier loss=0.6607, valid entropy min loss=0.5651, valid fisher loss=0.3691, valid intra-group fisher loss=116172.3125, valid inter-group fisher loss=3147.0405
+epoch: 153.0, cosine validation accuracy: 0.58500, cosine training accuracy: 0.64357
+epoch 153.0: train total loss=1.7111, train transfer loss=0.3352, train classifier loss=0.5793, train entropy min loss=0.5625, train fisher loss=0.7684, train intra-group fisher loss=241466.5781, train inter-group fisher loss=3142.2617
+epoch 153.0, valid transfer loss=0.5628, valid classifier loss=0.6774, valid entropy min loss=0.5819, valid fisher loss=0.3769, valid intra-group fisher loss=118433.6953, valid inter-group fisher loss=3142.0706
+epoch: 154.0, cosine validation accuracy: 0.61833, cosine training accuracy: 0.69357
+epoch 154.0: train total loss=1.5561, train transfer loss=0.2993, train classifier loss=0.4727, train entropy min loss=0.5649, train fisher loss=0.7558, train intra-group fisher loss=237252.1406, train inter-group fisher loss=3139.0061
+epoch 154.0, valid transfer loss=0.5752, valid classifier loss=0.7217, valid entropy min loss=0.5713, valid fisher loss=0.3757, valid intra-group fisher loss=117937.6641, valid inter-group fisher loss=3138.9204
+epoch: 155.0, cosine validation accuracy: 0.52167, cosine training accuracy: 0.55548
+epoch 155.0: train total loss=1.6352, train transfer loss=0.3163, train classifier loss=0.5224, train entropy min loss=0.5461, train fisher loss=0.7693, train intra-group fisher loss=241039.0625, train inter-group fisher loss=3133.4006
+epoch 155.0, valid transfer loss=0.7317, valid classifier loss=0.7749, valid entropy min loss=0.5711, valid fisher loss=0.3705, valid intra-group fisher loss=116095.0781, valid inter-group fisher loss=3133.2673
+epoch: 156.0, cosine validation accuracy: 0.49167, cosine training accuracy: 0.56405
+epoch 156.0: train total loss=1.6586, train transfer loss=0.3296, train classifier loss=0.5584, train entropy min loss=0.5443, train fisher loss=0.7434, train intra-group fisher loss=232721.8438, train inter-group fisher loss=3130.6895
+epoch 156.0, valid transfer loss=0.6761, valid classifier loss=0.8425, valid entropy min loss=0.5627, valid fisher loss=0.3715, valid intra-group fisher loss=116298.9688, valid inter-group fisher loss=3130.5537
+epoch: 157.0, cosine validation accuracy: 0.65667, cosine training accuracy: 0.75167
+epoch 157.0: train total loss=1.6091, train transfer loss=0.3271, train classifier loss=0.5009, train entropy min loss=0.5188, train fisher loss=0.7552, train intra-group fisher loss=235985.8750, train inter-group fisher loss=3124.8538
+epoch 157.0, valid transfer loss=0.5543, valid classifier loss=0.7402, valid entropy min loss=0.5848, valid fisher loss=0.3675, valid intra-group fisher loss=114840.9688, valid inter-group fisher loss=3124.7471
+epoch: 158.0, cosine validation accuracy: 0.57167, cosine training accuracy: 0.62310
+epoch 158.0: train total loss=1.5946, train transfer loss=0.3018, train classifier loss=0.5099, train entropy min loss=0.5472, train fisher loss=0.7555, train intra-group fisher loss=235869.0312, train inter-group fisher loss=3121.9792
+epoch 158.0, valid transfer loss=0.5858, valid classifier loss=0.7786, valid entropy min loss=0.5714, valid fisher loss=0.3745, valid intra-group fisher loss=116916.0469, valid inter-group fisher loss=3121.8062
+epoch: 159.0, cosine validation accuracy: 0.66667, cosine training accuracy: 0.75976
+epoch 159.0: train total loss=1.5790, train transfer loss=0.3206, train classifier loss=0.4866, train entropy min loss=0.5547, train fisher loss=0.7440, train intra-group fisher loss=231897.2969, train inter-group fisher loss=3116.8726
+epoch 159.0, valid transfer loss=0.5224, valid classifier loss=0.6280, valid entropy min loss=0.5496, valid fisher loss=0.3800, valid intra-group fisher loss=118441.8281, valid inter-group fisher loss=3116.8208
+epoch: 160.0, cosine validation accuracy: 0.65833, cosine training accuracy: 0.73643
+epoch 160.0: train total loss=1.6027, train transfer loss=0.3010, train classifier loss=0.5162, train entropy min loss=0.5350, train fisher loss=0.7587, train intra-group fisher loss=236200.0625, train inter-group fisher loss=3113.1167
+epoch 160.0, valid transfer loss=0.5488, valid classifier loss=0.6033, valid entropy min loss=0.5790, valid fisher loss=0.3748, valid intra-group fisher loss=116666.2656, valid inter-group fisher loss=3112.8904
+epoch: 161.0, cosine validation accuracy: 0.66833, cosine training accuracy: 0.75905
+epoch 161.0: train total loss=1.5864, train transfer loss=0.3048, train classifier loss=0.5129, train entropy min loss=0.5355, train fisher loss=0.7419, train intra-group fisher loss=230654.8125, train inter-group fisher loss=3108.9854
+epoch 161.0, valid transfer loss=0.5783, valid classifier loss=0.5732, valid entropy min loss=0.5580, valid fisher loss=0.3712, valid intra-group fisher loss=115392.7188, valid inter-group fisher loss=3108.9397
+epoch: 162.0, cosine validation accuracy: 0.60667, cosine training accuracy: 0.66262
+epoch 162.0: train total loss=1.6004, train transfer loss=0.3353, train classifier loss=0.4966, train entropy min loss=0.5588, train fisher loss=0.7405, train intra-group fisher loss=229845.9688, train inter-group fisher loss=3103.8931
+epoch 162.0, valid transfer loss=0.5631, valid classifier loss=0.8401, valid entropy min loss=0.5739, valid fisher loss=0.3684, valid intra-group fisher loss=114338.1719, valid inter-group fisher loss=3103.7092
+epoch: 163.0, cosine validation accuracy: 0.50667, cosine training accuracy: 0.54762
+epoch 163.0: train total loss=1.5592, train transfer loss=0.3003, train classifier loss=0.4834, train entropy min loss=0.5347, train fisher loss=0.7487, train intra-group fisher loss=232171.2188, train inter-group fisher loss=3100.8306
+epoch 163.0, valid transfer loss=0.6942, valid classifier loss=0.8162, valid entropy min loss=0.5479, valid fisher loss=0.3714, valid intra-group fisher loss=115147.7266, valid inter-group fisher loss=3100.7290
+epoch: 164.0, cosine validation accuracy: 0.51500, cosine training accuracy: 0.55738
+epoch 164.0: train total loss=1.6493, train transfer loss=0.3079, train classifier loss=0.5711, train entropy min loss=0.5728, train fisher loss=0.7417, train intra-group fisher loss=229559.8906, train inter-group fisher loss=3094.9177
+epoch 164.0, valid transfer loss=0.6311, valid classifier loss=0.7004, valid entropy min loss=0.5616, valid fisher loss=0.3709, valid intra-group fisher loss=114779.0000, valid inter-group fisher loss=3094.7737
+epoch: 165.0, cosine validation accuracy: 0.68000, cosine training accuracy: 0.77167
+epoch 165.0: train total loss=1.5660, train transfer loss=0.3001, train classifier loss=0.4860, train entropy min loss=0.5414, train fisher loss=0.7528, train intra-group fisher loss=232778.8125, train inter-group fisher loss=3092.2129
+epoch 165.0, valid transfer loss=0.6398, valid classifier loss=0.6390, valid entropy min loss=0.5552, valid fisher loss=0.3661, valid intra-group fisher loss=113205.8984, valid inter-group fisher loss=3092.0725
+epoch: 166.0, cosine validation accuracy: 0.56000, cosine training accuracy: 0.61405
+epoch 166.0: train total loss=1.5873, train transfer loss=0.2868, train classifier loss=0.5260, train entropy min loss=0.5504, train fisher loss=0.7469, train intra-group fisher loss=230531.4219, train inter-group fisher loss=3086.4744
+epoch 166.0, valid transfer loss=0.6227, valid classifier loss=0.7022, valid entropy min loss=0.5561, valid fisher loss=0.3744, valid intra-group fisher loss=115552.2344, valid inter-group fisher loss=3086.3875
+epoch: 167.0, cosine validation accuracy: 0.57833, cosine training accuracy: 0.63905
+epoch 167.0: train total loss=1.5721, train transfer loss=0.2776, train classifier loss=0.4852, train entropy min loss=0.5052, train fisher loss=0.7840, train intra-group fisher loss=241727.0938, train inter-group fisher loss=3083.3374
+epoch 167.0, valid transfer loss=0.6277, valid classifier loss=0.6729, valid entropy min loss=0.5495, valid fisher loss=0.3731, valid intra-group fisher loss=115036.5312, valid inter-group fisher loss=3083.1550
+epoch: 168.0, cosine validation accuracy: 0.49667, cosine training accuracy: 0.54286
+epoch 168.0: train total loss=1.5522, train transfer loss=0.3160, train classifier loss=0.4701, train entropy min loss=0.5414, train fisher loss=0.7390, train intra-group fisher loss=227503.5469, train inter-group fisher loss=3078.3418
+epoch 168.0, valid transfer loss=0.6577, valid classifier loss=0.7780, valid entropy min loss=0.5500, valid fisher loss=0.3740, valid intra-group fisher loss=115120.8438, valid inter-group fisher loss=3078.3018
+epoch: 169.0, cosine validation accuracy: 0.50500, cosine training accuracy: 0.54714
+epoch 169.0: train total loss=1.6443, train transfer loss=0.2930, train classifier loss=0.5703, train entropy min loss=0.5030, train fisher loss=0.7558, train intra-group fisher loss=232326.8906, train inter-group fisher loss=3073.9775
+epoch 169.0, valid transfer loss=0.7856, valid classifier loss=0.8090, valid entropy min loss=0.5759, valid fisher loss=0.3716, valid intra-group fisher loss=114224.5469, valid inter-group fisher loss=3073.7502
+epoch: 170.0, cosine validation accuracy: 0.69167, cosine training accuracy: 0.77762
+epoch 170.0: train total loss=1.6038, train transfer loss=0.3167, train classifier loss=0.5270, train entropy min loss=0.5596, train fisher loss=0.7322, train intra-group fisher loss=224784.0000, train inter-group fisher loss=3070.1233
+epoch 170.0, valid transfer loss=0.5433, valid classifier loss=0.6687, valid entropy min loss=0.5529, valid fisher loss=0.3746, valid intra-group fisher loss=115005.0781, valid inter-group fisher loss=3070.0576
+epoch: 171.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.57881
+epoch 171.0: train total loss=1.6912, train transfer loss=0.3654, train classifier loss=0.5384, train entropy min loss=0.5144, train fisher loss=0.7616, train intra-group fisher loss=233432.6719, train inter-group fisher loss=3064.9177
+epoch 171.0, valid transfer loss=0.6305, valid classifier loss=0.8067, valid entropy min loss=0.5466, valid fisher loss=0.3680, valid intra-group fisher loss=112784.4688, valid inter-group fisher loss=3064.7559
+epoch: 172.0, cosine validation accuracy: 0.51333, cosine training accuracy: 0.56262
+epoch 172.0: train total loss=1.6193, train transfer loss=0.3270, train classifier loss=0.5064, train entropy min loss=0.5305, train fisher loss=0.7593, train intra-group fisher loss=232515.3438, train inter-group fisher loss=3062.0435
+epoch 172.0, valid transfer loss=0.6101, valid classifier loss=0.8378, valid entropy min loss=0.5422, valid fisher loss=0.3681, valid intra-group fisher loss=112709.1016, valid inter-group fisher loss=3061.9377
+epoch: 173.0, cosine validation accuracy: 0.68167, cosine training accuracy: 0.78238
+epoch 173.0: train total loss=1.5713, train transfer loss=0.3382, train classifier loss=0.4684, train entropy min loss=0.5361, train fisher loss=0.7378, train intra-group fisher loss=225499.7812, train inter-group fisher loss=3056.2083
+epoch 173.0, valid transfer loss=0.5451, valid classifier loss=0.6144, valid entropy min loss=0.5433, valid fisher loss=0.3681, valid intra-group fisher loss=112507.3906, valid inter-group fisher loss=3056.0867
+epoch: 174.0, cosine validation accuracy: 0.58667, cosine training accuracy: 0.66143
+epoch 174.0: train total loss=1.6138, train transfer loss=0.3501, train classifier loss=0.5017, train entropy min loss=0.5557, train fisher loss=0.7342, train intra-group fisher loss=224174.3125, train inter-group fisher loss=3053.4543
+epoch 174.0, valid transfer loss=0.6003, valid classifier loss=0.7475, valid entropy min loss=0.5350, valid fisher loss=0.3673, valid intra-group fisher loss=112136.0000, valid inter-group fisher loss=3053.2839
+epoch: 175.0, cosine validation accuracy: 0.51167, cosine training accuracy: 0.55024
+epoch 175.0: train total loss=1.5419, train transfer loss=0.3183, train classifier loss=0.4535, train entropy min loss=0.5454, train fisher loss=0.7429, train intra-group fisher loss=226430.0938, train inter-group fisher loss=3048.0688
+epoch 175.0, valid transfer loss=0.7354, valid classifier loss=0.7980, valid entropy min loss=0.5387, valid fisher loss=0.3709, valid intra-group fisher loss=113064.4688, valid inter-group fisher loss=3047.9956
+epoch: 176.0, cosine validation accuracy: 0.52000, cosine training accuracy: 0.57310
+epoch 176.0: train total loss=1.5860, train transfer loss=0.3292, train classifier loss=0.4985, train entropy min loss=0.5195, train fisher loss=0.7322, train intra-group fisher loss=222950.5781, train inter-group fisher loss=3044.7690
+epoch 176.0, valid transfer loss=0.6504, valid classifier loss=0.7737, valid entropy min loss=0.5445, valid fisher loss=0.3742, valid intra-group fisher loss=113921.5078, valid inter-group fisher loss=3044.5481
+epoch: 177.0, cosine validation accuracy: 0.56333, cosine training accuracy: 0.63119
+epoch 177.0: train total loss=1.6663, train transfer loss=0.3417, train classifier loss=0.5532, train entropy min loss=0.5354, train fisher loss=0.7446, train intra-group fisher loss=226372.5469, train inter-group fisher loss=3040.1858
+epoch 177.0, valid transfer loss=0.5452, valid classifier loss=0.7171, valid entropy min loss=0.5409, valid fisher loss=0.3671, valid intra-group fisher loss=111613.7969, valid inter-group fisher loss=3040.1626
+epoch: 178.0, cosine validation accuracy: 0.67667, cosine training accuracy: 0.76952
+epoch 178.0: train total loss=1.6217, train transfer loss=0.3357, train classifier loss=0.5342, train entropy min loss=0.5382, train fisher loss=0.7248, train intra-group fisher loss=220018.2812, train inter-group fisher loss=3035.6614
+epoch 178.0, valid transfer loss=0.6326, valid classifier loss=0.5725, valid entropy min loss=0.5586, valid fisher loss=0.3674, valid intra-group fisher loss=111514.4062, valid inter-group fisher loss=3035.4568
+epoch: 179.0, cosine validation accuracy: 0.68167, cosine training accuracy: 0.79190
+epoch 179.0: train total loss=1.5560, train transfer loss=0.3076, train classifier loss=0.4912, train entropy min loss=0.5418, train fisher loss=0.7302, train intra-group fisher loss=221405.0938, train inter-group fisher loss=3032.1819
+epoch 179.0, valid transfer loss=0.5187, valid classifier loss=0.5203, valid entropy min loss=0.5373, valid fisher loss=0.3689, valid intra-group fisher loss=111862.3750, valid inter-group fisher loss=3032.1086
+epoch: 180.0, cosine validation accuracy: 0.63000, cosine training accuracy: 0.71452
+epoch 180.0: train total loss=1.5565, train transfer loss=0.2888, train classifier loss=0.4969, train entropy min loss=0.5323, train fisher loss=0.7443, train intra-group fisher loss=225274.4688, train inter-group fisher loss=3026.7266
+epoch 180.0, valid transfer loss=0.5920, valid classifier loss=0.6291, valid entropy min loss=0.5204, valid fisher loss=0.3654, valid intra-group fisher loss=110589.5625, valid inter-group fisher loss=3026.5728
+epoch: 181.0, cosine validation accuracy: 0.69333, cosine training accuracy: 0.79238
+epoch 181.0: train total loss=1.5673, train transfer loss=0.3131, train classifier loss=0.4930, train entropy min loss=0.5396, train fisher loss=0.7341, train intra-group fisher loss=221987.2812, train inter-group fisher loss=3023.8691
+epoch 181.0, valid transfer loss=0.5675, valid classifier loss=0.5561, valid entropy min loss=0.5265, valid fisher loss=0.3657, valid intra-group fisher loss=110574.6250, valid inter-group fisher loss=3023.7468
+epoch: 182.0, cosine validation accuracy: 0.51833, cosine training accuracy: 0.56905
+epoch 182.0: train total loss=1.4916, train transfer loss=0.3011, train classifier loss=0.4265, train entropy min loss=0.4910, train fisher loss=0.7395, train intra-group fisher loss=223186.7188, train inter-group fisher loss=3018.1819
+epoch 182.0, valid transfer loss=0.7690, valid classifier loss=0.7547, valid entropy min loss=0.5404, valid fisher loss=0.3612, valid intra-group fisher loss=109017.1016, valid inter-group fisher loss=3018.0698
+epoch: 183.0, cosine validation accuracy: 0.69333, cosine training accuracy: 0.79238
+epoch 183.0: train total loss=1.5591, train transfer loss=0.3251, train classifier loss=0.4785, train entropy min loss=0.5319, train fisher loss=0.7289, train intra-group fisher loss=219793.9531, train inter-group fisher loss=3015.3994
+epoch 183.0, valid transfer loss=0.5367, valid classifier loss=0.5774, valid entropy min loss=0.5502, valid fisher loss=0.3692, valid intra-group fisher loss=111313.5547, valid inter-group fisher loss=3015.2146
+epoch: 184.0, cosine validation accuracy: 0.51667, cosine training accuracy: 0.57500
+epoch 184.0: train total loss=1.5297, train transfer loss=0.3020, train classifier loss=0.4729, train entropy min loss=0.5131, train fisher loss=0.7291, train intra-group fisher loss=219465.5156, train inter-group fisher loss=3010.0322
+epoch 184.0, valid transfer loss=0.6863, valid classifier loss=0.9223, valid entropy min loss=0.5146, valid fisher loss=0.3659, valid intra-group fisher loss=110142.7969, valid inter-group fisher loss=3009.9712
+epoch: 185.0, cosine validation accuracy: 0.52333, cosine training accuracy: 0.56762
+epoch 185.0: train total loss=1.6038, train transfer loss=0.3696, train classifier loss=0.4811, train entropy min loss=0.5220, train fisher loss=0.7270, train intra-group fisher loss=218575.0312, train inter-group fisher loss=3006.4749
+epoch 185.0, valid transfer loss=0.6622, valid classifier loss=0.8861, valid entropy min loss=0.5285, valid fisher loss=0.3641, valid intra-group fisher loss=109444.6562, valid inter-group fisher loss=3006.2441
+epoch: 186.0, cosine validation accuracy: 0.65000, cosine training accuracy: 0.72905
+epoch 186.0: train total loss=1.5530, train transfer loss=0.3090, train classifier loss=0.4709, train entropy min loss=0.5032, train fisher loss=0.7479, train intra-group fisher loss=224532.9688, train inter-group fisher loss=3002.2717
+epoch 186.0, valid transfer loss=0.5696, valid classifier loss=0.6782, valid entropy min loss=0.5377, valid fisher loss=0.3664, valid intra-group fisher loss=109998.2656, valid inter-group fisher loss=3002.2341
+epoch: 187.0, cosine validation accuracy: 0.65833, cosine training accuracy: 0.73857
+epoch 187.0: train total loss=1.6650, train transfer loss=0.3707, train classifier loss=0.5317, train entropy min loss=0.4551, train fisher loss=0.7399, train intra-group fisher loss=221779.7812, train inter-group fisher loss=2997.4814
+epoch 187.0, valid transfer loss=0.5089, valid classifier loss=0.5860, valid entropy min loss=0.4913, valid fisher loss=0.3694, valid intra-group fisher loss=110715.7344, valid inter-group fisher loss=2997.2837
+epoch: 188.0, cosine validation accuracy: 0.70000, cosine training accuracy: 0.78310
+epoch 188.0: train total loss=1.6405, train transfer loss=0.3215, train classifier loss=0.5475, train entropy min loss=0.4938, train fisher loss=0.7468, train intra-group fisher loss=223619.3438, train inter-group fisher loss=2994.2529
+epoch 188.0, valid transfer loss=0.5755, valid classifier loss=0.6349, valid entropy min loss=0.5435, valid fisher loss=0.3629, valid intra-group fisher loss=108672.2656, valid inter-group fisher loss=2994.1685
+epoch: 189.0, cosine validation accuracy: 0.53167, cosine training accuracy: 0.58190
+epoch 189.0: train total loss=1.5413, train transfer loss=0.2951, train classifier loss=0.4830, train entropy min loss=0.5135, train fisher loss=0.7375, train intra-group fisher loss=220434.6562, train inter-group fisher loss=2988.8652
+epoch 189.0, valid transfer loss=0.6319, valid classifier loss=0.7799, valid entropy min loss=0.5095, valid fisher loss=0.3637, valid intra-group fisher loss=108697.5625, valid inter-group fisher loss=2988.7329
+epoch: 190.0, cosine validation accuracy: 0.70167, cosine training accuracy: 0.79976
+epoch 190.0: train total loss=1.5605, train transfer loss=0.3334, train classifier loss=0.4725, train entropy min loss=0.5153, train fisher loss=0.7288, train intra-group fisher loss=217629.5000, train inter-group fisher loss=2986.1699
+epoch 190.0, valid transfer loss=0.5473, valid classifier loss=0.5969, valid entropy min loss=0.5436, valid fisher loss=0.3622, valid intra-group fisher loss=108141.5312, valid inter-group fisher loss=2986.0237
+epoch: 191.0, cosine validation accuracy: 0.62000, cosine training accuracy: 0.68310
+epoch 191.0: train total loss=1.8257, train transfer loss=0.4270, train classifier loss=0.6461, train entropy min loss=0.6572, train fisher loss=0.7197, train intra-group fisher loss=214527.7500, train inter-group fisher loss=2980.6160
+epoch 191.0, valid transfer loss=0.7899, valid classifier loss=1.0068, valid entropy min loss=0.5153, valid fisher loss=0.3593, valid intra-group fisher loss=107095.4141, valid inter-group fisher loss=2980.5154
+epoch: 192.0, cosine validation accuracy: 0.65333, cosine training accuracy: 0.72119
+epoch 192.0: train total loss=1.5612, train transfer loss=0.3094, train classifier loss=0.4829, train entropy min loss=0.5076, train fisher loss=0.7435, train intra-group fisher loss=221374.3125, train inter-group fisher loss=2977.5596
+epoch 192.0, valid transfer loss=0.5376, valid classifier loss=0.5697, valid entropy min loss=0.5285, valid fisher loss=0.3647, valid intra-group fisher loss=108599.3984, valid inter-group fisher loss=2977.3774
+epoch: 193.0, cosine validation accuracy: 0.59833, cosine training accuracy: 0.66810
+epoch 193.0: train total loss=1.5076, train transfer loss=0.3278, train classifier loss=0.4178, train entropy min loss=0.5153, train fisher loss=0.7362, train intra-group fisher loss=218838.6250, train inter-group fisher loss=2972.5796
+epoch 193.0, valid transfer loss=0.6235, valid classifier loss=0.6018, valid entropy min loss=0.5268, valid fisher loss=0.3651, valid intra-group fisher loss=108526.5156, valid inter-group fisher loss=2972.5378
+epoch: 194.0, cosine validation accuracy: 0.69167, cosine training accuracy: 0.78214
+epoch 194.0: train total loss=1.5962, train transfer loss=0.2907, train classifier loss=0.5371, train entropy min loss=0.4776, train fisher loss=0.7445, train intra-group fisher loss=221003.4062, train inter-group fisher loss=2968.5901
+epoch 194.0, valid transfer loss=0.5413, valid classifier loss=0.6220, valid entropy min loss=0.5493, valid fisher loss=0.3653, valid intra-group fisher loss=108439.4219, valid inter-group fisher loss=2968.3621
+epoch: 195.0, cosine validation accuracy: 0.70833, cosine training accuracy: 0.80452
+epoch 195.0: train total loss=1.5691, train transfer loss=0.3041, train classifier loss=0.5051, train entropy min loss=0.5368, train fisher loss=0.7331, train intra-group fisher loss=217342.0938, train inter-group fisher loss=2964.7268
+epoch 195.0, valid transfer loss=0.5372, valid classifier loss=0.6216, valid entropy min loss=0.5392, valid fisher loss=0.3638, valid intra-group fisher loss=107861.0859, valid inter-group fisher loss=2964.6746
+epoch: 196.0, cosine validation accuracy: 0.50833, cosine training accuracy: 0.53976
+epoch 196.0: train total loss=1.5038, train transfer loss=0.3002, train classifier loss=0.4498, train entropy min loss=0.5421, train fisher loss=0.7266, train intra-group fisher loss=215050.1875, train inter-group fisher loss=2959.7129
+epoch 196.0, valid transfer loss=0.7050, valid classifier loss=0.8718, valid entropy min loss=0.4930, valid fisher loss=0.3636, valid intra-group fisher loss=107601.0312, valid inter-group fisher loss=2959.5298
+epoch: 197.0, cosine validation accuracy: 0.71000, cosine training accuracy: 0.79690
+epoch 197.0: train total loss=1.5230, train transfer loss=0.3126, train classifier loss=0.4484, train entropy min loss=0.5002, train fisher loss=0.7369, train intra-group fisher loss=217886.9688, train inter-group fisher loss=2956.7910
+epoch 197.0, valid transfer loss=0.5118, valid classifier loss=0.5905, valid entropy min loss=0.5141, valid fisher loss=0.3643, valid intra-group fisher loss=107702.9297, valid inter-group fisher loss=2956.6924
+epoch: 198.0, cosine validation accuracy: 0.54500, cosine training accuracy: 0.62810
+epoch 198.0: train total loss=1.6164, train transfer loss=0.3366, train classifier loss=0.5208, train entropy min loss=0.4638, train fisher loss=0.7359, train intra-group fisher loss=217171.0625, train inter-group fisher loss=2951.2656
+epoch 198.0, valid transfer loss=0.6794, valid classifier loss=0.8116, valid entropy min loss=0.5056, valid fisher loss=0.3573, valid intra-group fisher loss=105437.2422, valid inter-group fisher loss=2951.1392
+epoch: 199.0, cosine validation accuracy: 0.65167, cosine training accuracy: 0.72524
+epoch 199.0: train total loss=1.5323, train transfer loss=0.3485, train classifier loss=0.4425, train entropy min loss=0.4868, train fisher loss=0.7169, train intra-group fisher loss=211398.8750, train inter-group fisher loss=2948.6023
+epoch 199.0, valid transfer loss=0.5338, valid classifier loss=0.5388, valid entropy min loss=0.5009, valid fisher loss=0.3646, valid intra-group fisher loss=107505.4062, valid inter-group fisher loss=2948.4458
+epoch: 200.0, cosine validation accuracy: 0.70500, cosine training accuracy: 0.78524
+epoch 200.0: train total loss=1.5530, train transfer loss=0.3181, train classifier loss=0.4726, train entropy min loss=0.4964, train fisher loss=0.7374, train intra-group fisher loss=217027.8438, train inter-group fisher loss=2943.0466
+epoch 200.0, valid transfer loss=0.5486, valid classifier loss=0.4988, valid entropy min loss=0.5154, valid fisher loss=0.3613, valid intra-group fisher loss=106327.9844, valid inter-group fisher loss=2942.9729
+finish training! 
