@@ -1,3 +1,5 @@
+# *This is a forked project for homework of PY&DL course, 2022*
+
 # DeepMergeDomainAdaptation
 This repository accomplishes deep domain adaptation for astronomy using Maximum Mean Discrepancy (MMD) and adversarial training using Domain Adversarial Neural Networks (DANNs) on simulated and observer galaxy mergers. We also implement the (optional) use of Fisher loss and entropy minimization in order to enforce within class compactness and between class separability in both the source and target domains.
 ![](images/source_target.png)
