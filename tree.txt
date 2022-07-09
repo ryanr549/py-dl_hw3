@@ -1,0 +1,37 @@
+.
+├── data
+│   ├── download.txt
+│   └── log.txt
+├── hyperparameter_search
+│   ├── hyper_train_ada.py
+│   ├── hyper_train_mmd.py
+│   ├── problem_ada.py
+│   ├── problem_mmd.py
+│   ├── run_ada.py
+│   └── run_mmd.py
+├── LICENSE
+├── output_DeepMerge_SDSS
+│   ├── ADA+F
+│   ├── MMD+F
+│   └── noDA
+├── python_files
+│   ├── create_netgraph.py
+│   ├── evaluation.py
+│   ├── galaxy_utils.py
+│   ├── grad_cam.py
+│   ├── gradcam_vis.py
+│   ├── import_and_normalize.py
+│   ├── loss.py
+│   ├── lr_schedule.py
+│   ├── network.py
+│   ├── no_domain_adaptation.py
+│   ├── train_ADA.py
+│   ├── train_MMD.py
+│   ├── Untitled.ipynb
+│   └── visualize.py
+├── README.md
+├── requirements.txt
+├── Running DeepMerge domain adaptation files.ipynb
+└── visualize_netgraph.ipynb
+
+8 directories, 47 files
